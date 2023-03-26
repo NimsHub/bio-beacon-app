@@ -1,0 +1,109 @@
+<mat-card appearance="outlined">
+  <mat-card-header>
+    <div class="header">
+      <img alt="logo" height="80px" src="assets/bio-beacon-logo-white.png">
+      <h1>Sign Up to Bio Beacon</h1>
+    </div>
+  </mat-card-header>
+  <mat-card-content>
+    <p class="help-text">Are you an athlete or a coach?</p>
+    <mat-button-toggle-group [formControl]="role">
+      <mat-button-toggle [value]="role">Athlete</mat-button-toggle>
+      <mat-button-toggle [value]="!role">Coach</mat-button-toggle>
+    </mat-button-toggle-group>
+    <form>
+      <div class="row">
+        <p>
+          <mat-form-field appearance="outline" color="accent">
+            <mat-label>First Name</mat-label>
+            <input [formControl]="firstName" matInput placeholder="John" type="text">
+            <mat-error *ngIf="firstName.hasError('required')">
+              First Name is <strong>required</strong>
+            </mat-error>
+          </mat-form-field>
+        </p>
+        <p>
+          <mat-form-field appearance="outline" color="accent">
+            <mat-label>Last Name</mat-label>
+            <input [formControl]="lastName" matInput placeholder="John" type="text">
+            <mat-error *ngIf="lastName.hasError('required')">
+              Last Name is <strong>required</strong>
+            </mat-error>
+          </mat-form-field>
+        </p>
+      </div>
+      <div class="row">
+        <p>
+          <mat-form-field appearance="outline">
+            <mat-label>Mobile</mat-label>
+            <input [formControl]="mobile" matInput placeholder="example@gmail.com" type="phone">
+            <mat-icon matSuffix>phone</mat-icon>
+            <mat-error *ngIf="mobile.hasError('required')">
+              Mobile No is <strong>required</strong>
+            </mat-error>
+          </mat-form-field>
+        </p>
+        <p>
+          <mat-form-field appearance="outline">
+            <mat-label>Address</mat-label>
+            <input [formControl]="address" matInput placeholder="example@gmail.com" type="phone">
+            <mat-icon matSuffix>place</mat-icon>
+            <mat-error *ngIf="address.hasError('required')">
+              Address is <strong>required</strong>
+            </mat-error>
+          </mat-form-field>
+        </p>
+      </div>
+      <div class="row">
+        <p>
+          <mat-form-field appearance="outline">
+            <mat-label>Date of Birth</mat-label>
+            <input [formControl]="dateOdBirth" [matDatepicker]="picker" matInput>
+            <mat-datepicker-toggle [for]="picker" matIconSuffix></mat-datepicker-toggle>
+            <mat-datepicker #picker [startAt]="startDate" startView="year"></mat-datepicker>
+            <mat-error *ngIf="dateOdBirth.hasError('required')">
+              Date of Birth is <strong>required</strong>
+            </mat-error>
+          </mat-form-field>
+        </p>
+        <p>
+          <label class="example-margin">Gender</label>
+          <mat-radio-group [(ngModel)]="labelPosition">
+            <mat-radio-button value="Male">Male</mat-radio-button>
+            <mat-radio-button value="Female">Female</mat-radio-button>
+          </mat-radio-group>
+        </p>
+      </div>
+      <div *ngIf="role.value" class="row">
+        <p>
+          <mat-form-field appearance="outline">
+            <mat-label>Email</mat-label>
+            <input [formControl]="userEmail" matInput placeholder="example@gmail.com" type="email">
+            <mat-icon matSuffix>email</mat-icon>
+            <mat-error *ngIf="userEmail.hasError('email') && !userEmail.hasError('required')">
+              Please enter a valid email
+            </mat-error>
+            <mat-error *ngIf="userEmail.hasError('required')">
+              Email is <strong>required</strong>
+            </mat-error>
+          </mat-form-field>
+        </p>
+      </div>
+      <div class="row">
+        <p>
+          <mat-form-field appearance="outline">
+            <mat-label>Password</mat-label>
+            <input [formControl]="password" [type]="showPassword ? 'password':'text'" matInput
+                   placeholder="password">
+            <button (click)="showPassword=!showPassword" mat-icon-button matSuffix>
+              <mat-icon>{{showPassword ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+            <mat-error *ngIf="password.hasError('required')">Password is required</mat-error>
+          </mat-form-field>
+        </p>
+      </div>
+      <p class="help-text">Already a member? <a (click)="toggle()">Sign In</a></p>
+      <button color="accent" id="submit-btn" mat-flat-button>Create an account</button>
+    </form>
+  </mat-card-content>
+</mat-card>
