@@ -1,0 +1,44 @@
+  <mat-sidenav-container class="container">
+    <mat-sidenav #sidenav  mode="side" opened class="sidenav">
+      <div style="display: flex;flex-direction: column;height: 100%;">
+        <div style="display: flex ;justify-content: center;">
+          <img src="assets/bio-beacon-logo-long.png" alt="logo" height="80px">
+
+        </div>
+        <div style="display: flex;justify-content: center;flex-direction: column">
+          <button matSuffix mat-flat-button>
+            <mat-icon>person_outline</mat-icon>
+            Profile
+          </button>
+          <button matSuffix mat-flat-button>
+            <mat-icon>event_note</mat-icon>
+            Sessions
+          </button>
+          <button matSuffix mat-flat-button>
+            <mat-icon>error_outline</mat-icon>
+            About us
+          </button>
+          <button matSuffix mat-flat-button>
+            <mat-icon>mail_outline</mat-icon>
+            Contact us
+          </button>
+
+        </div>
+
+      </div>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+
+      <div class="user-info">
+
+        <button style="margin: 0" matSuffix mat-flat-button (click)="sidenav.toggle()"><mat-icon>apps</mat-icon>
+        Dashboard</button>
+      </div>
+
+      <div  style=" margin: 0 0 20px 0;display: flex;justify-content: center">
+        <app-session-table></app-session-table>
+      </div>
+
+    </mat-sidenav-content>
+  </mat-sidenav-container>
