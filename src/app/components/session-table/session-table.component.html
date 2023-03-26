@@ -1,0 +1,28 @@
+<div class="table">
+  <div class="row" style="">
+
+    <div class="column">
+      <p>Device Id</p>
+
+    </div>
+
+    <div class="column">
+      <p style="width: 110px">Start</p>
+    </div>
+
+    <div class="column">
+      <p style="width: 120px">End</p>
+    </div>
+
+    <div class="column">
+      <p>Duration</p>
+    </div>
+
+    <div class="column">
+      <p>Analysis</p>
+    </div>
+
+  </div>
+  <app-table-row *ngFor="let session of sessions" [sessionItem]="session"
+                 style="max-width: 1000px;height: 100%"></app-table-row>
+</div>
