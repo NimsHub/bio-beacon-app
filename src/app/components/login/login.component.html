@@ -1,0 +1,43 @@
+<mat-card>
+  <mat-card-header>
+    <div class="header">
+      <h2>Welcome Back</h2>
+      <img alt="logo" height="80px" src="assets/bio-beacon-logo-white.png">
+    </div>
+  </mat-card-header>
+  <mat-card-content>
+    <form>
+      <div class="row">
+        <p>
+          <mat-form-field appearance="outline">
+            <mat-label *ngIf="invalid">
+              Please enter a valid email
+            </mat-label>
+            <mat-label *ngIf="!invalid">
+              Email
+            </mat-label>
+            <input [formControl]="userEmail" matInput placeholder="username@mail.com" type="email">
+            <mat-icon matSuffix>email</mat-icon>
+            <mat-error *ngIf="userEmail.hasError('required')">
+              Email is <strong>required</strong>
+            </mat-error>
+          </mat-form-field>
+        </p>
+      </div>
+      <div class="row">
+        <p>
+          <mat-form-field appearance="outline">
+            <mat-label>Password</mat-label>
+            <input [formControl]="password" [type]="showPassword ? 'password':'text'" matInput placeholder="password">
+            <button (click)="showPassword=!showPassword" mat-icon-button matSuffix>
+              <mat-icon>{{showPassword ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+            <mat-error *ngIf="password.hasError('required')">Password is required</mat-error>
+          </mat-form-field>
+        </p>
+      </div>
+      <p class="help-text">Don't have an account? <a (click)="toggle()">Sign Up</a></p>
+      <button color="accent" id="submit-btn" mat-flat-button>Login</button>
+    </form>
+  </mat-card-content>
+</mat-card>
