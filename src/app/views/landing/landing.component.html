@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="column" id="slogan" style="background: white;">
+    <img alt="logo" height="300px" src="../../../assets/bio-beacon-logo.png">
+    <h2>Maximized performance. Minimized injuries.</h2>
+    <p>Get the most out of your workouts with Bio Beacon. Track your progress, receive personalized guidance from
+      our experienced training staff, and achieve your goals like never before.
+    </p>
+    <h4>Join Bio Beacon today and take your workouts to the next level.</h4>
+  </div>
+  <div class="column" style="background: linear-gradient(#c30a51,#2d132c);">
+    <app-registration (toggleEvent)="toggleForm()" *ngIf="formStatus"></app-registration>
+    <app-login (toggleEvent)="toggleForm()" *ngIf="!formStatus"></app-login>
+  </div>
+</div>

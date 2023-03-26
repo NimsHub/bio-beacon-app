@@ -1,0 +1,71 @@
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /*height: 300px; !* Should be removed. Only for demonstration *!*/
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+app-registration {
+  width: 100%;
+  max-width: 600px;
+  scale: 0.8;
+}
+
+app-login {
+  width: 100%;
+  max-width: 500px;
+  scale: 0.8;
+}
+
+#slogan {
+  padding: 100px;
+  text-align: center;
+
+}
+
+#slogan p {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  color: #8b8b8b;
+}
+
+#slogan img {
+  margin: 50px 0;
+}
+
+#slogan h2, h4 {
+
+}
+
+@media only screen and (max-width: 1200px) {
+  .column {
+    float: bottom;
+    max-height: 800px;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Styles for screens with a width of 900px or less */
+@media only screen and (max-width: 900px) {
+
+}
