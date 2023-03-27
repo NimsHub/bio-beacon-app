@@ -13,7 +13,7 @@
   );
 }
 
-#homepage-main-image-box {
+.homepage-main-image-box {
   width: 50%;
   height: 100%;
   /* background-image: url("../../assets/bio-beacon-logo.png"); */
@@ -23,7 +23,7 @@
   animation: main-image-animation 3s forwards 0s;
 }
 
-#homepage-main-image-box:after {
+.homepage-main-image-box:after {
   content: "";
   position: absolute;
   width: 50%;
@@ -31,6 +31,15 @@
   /* background-image: url("../../assets/bio-beacon-logo.png"); */
   left: 0px;
   z-index: -1;
+}
+
+.homepage-main-icon-box {
+  content: "";
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  bottom: -20%;
+  left: 30%;
 }
 
 #homepage-main-image {
@@ -81,4 +90,17 @@
   font-size: 8em;
   font-weight: 500;
   line-height: 130px;
+}
+
+.homepage-sports-icons-container{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid #48d7ff;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #48d7ff;
 }
