@@ -17,6 +17,7 @@ import {MatSidenavModule} from "@angular/material/sidenav";
 import {MatCheckboxModule} from "@angular/material/checkbox";
 import {MatToolbarModule} from "@angular/material/toolbar";
 import { HomePageComponent } from './home-page/home-page.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { HomePageComponent } from './home-page/home-page.component';
     MatButtonToggleModule,
     MatSidenavModule,
     MatCheckboxModule,
-    MatToolbarModule
+    MatToolbarModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
