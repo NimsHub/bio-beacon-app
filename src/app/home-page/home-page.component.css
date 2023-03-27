@@ -14,24 +14,24 @@
 }
 
 #homepage-main-image-box {
-    width: 50%;
-    height: 100%;
-    /* background-image: url("../../assets/bio-beacon-logo.png"); */
-    position: absolute;
-    bottom: -20%;
-    left: 30%;
-    animation: main-image-animation 3s forwards 0s;
-  }
-  
-  #homepage-main-image-box:after {
-    content: "";
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    /* background-image: url("../../assets/bio-beacon-logo.png"); */
-    left: 0px;
-    z-index: -1;
-  }
+  width: 50%;
+  height: 100%;
+  /* background-image: url("../../assets/bio-beacon-logo.png"); */
+  position: absolute;
+  bottom: -20%;
+  left: 30%;
+  animation: main-image-animation 3s forwards 0s;
+}
+
+#homepage-main-image-box:after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  /* background-image: url("../../assets/bio-beacon-logo.png"); */
+  left: 0px;
+  z-index: -1;
+}
 
 #homepage-main-image {
   height: 60%;
