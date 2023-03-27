@@ -5,6 +5,7 @@ import { faPersonSkiing } from '@fortawesome/free-solid-svg-icons';
 import { faPersonRunning } from '@fortawesome/free-solid-svg-icons';
 import { faPersonSwimming } from '@fortawesome/free-solid-svg-icons';
 import { faPersonHiking } from '@fortawesome/free-solid-svg-icons';
+import { faPersonSkating } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-home-page',
@@ -18,4 +19,5 @@ export class HomePageComponent {
   faPersonRunning = faPersonRunning;
   faPersonSwimming = faPersonSwimming;
   faPersonHiking = faPersonHiking;
+  faPersonSkating = faPersonSkating;
 }

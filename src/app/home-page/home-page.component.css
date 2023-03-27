@@ -83,13 +83,19 @@
 .homepage-main-icon-box {
   width: 50%;
   height: 50%;
-  /* position: absolute;
-  top: 50%;
-  left: 25%; */
+  top: 77%;
+  left: 60%;
+  position: fixed;
+}
 
+.homepage-main-icon-below-text {
+  width: 50%;
+  height: 50%;
   top: 70%;
   left: 60%;
   position: fixed;
+  color: #ffffff;
+  -webkit-text-stroke-color: black;
 }
 
 .homepage-sports-icons-container{
@@ -104,4 +110,26 @@
   font-size: 20px;
   color: #ffffff;
   margin: 15px;
+}
+
+.homepage-about-button{
+  background-color: #801336 !important; 
+  color: white !important;
+}
+
+.homepage-about-button:hover{
+  background-color: #dd789a !important; 
+  color: white !important;
+}
+
+.homepage-start-button{
+  background-color: #c72c41 !important;
+  color: white !important;
+  margin-left: 10px;
+}
+
+.homepage-start-button:hover{
+  background-color: #dd789a !important;
+  color: white !important;
+  margin-left: 10px;
 }
