@@ -1,11 +1,34 @@
-h1{
-  font-size: 32px;
+h1 {
+  font-size: 220%;
 }
-#homepage-main-container {
+
+.homepage-main-container {
   width: 100%;
   height: 100%;
   position: absolute;
   overflow: hidden;
+}
+
+.homepage-start-button {
+  background-color: #801336 !important;
+  color: white !important;
+  display: block;
+  width: 46.5%;
+  left: 3.5%;
+}
+
+.homepage-start-button:hover {
+  background-color: #dd789a !important;
+  color: white !important;
+}
+
+/*RIGHT SIDE OF THE HOME PAGE*/
+.homepage-main-image-container {
+  width: 50%;
+  height: 100%;
+  left: 50%;
+  position: absolute;
+  /* overflow: hidden; */
   background: rgb(45, 19, 44);
   background: linear-gradient(
     360deg,
@@ -17,10 +40,10 @@ h1{
 }
 
 .homepage-main-image-box {
-  width: 50%;
+  width: 100%;
   height: 100%;
   position: absolute;
-  bottom: -20%;
+  bottom: -17%;
   left: 30%;
   animation: main-image-animation 3s forwards 0s;
 }
@@ -28,85 +51,31 @@ h1{
 .homepage-main-image-box:after {
   content: "";
   position: absolute;
-  width: 50%;
+  width: 100%;
   height: 100%;
-  left: 0px;
+  left: 0%;
   z-index: -1;
 }
 
-#homepage-main-image {
+.homepage-main-image {
   height: 50%;
-  /* width: 60%; */
-}
-
-.container1 {
-  width: 50%;
-  height: 100%;
-  /* background-image: url("../../assets/bio-beacon-logo.png"); */
-  position: absolute;
 }
 
 @keyframes main-image-animation {
   from {
-    left: 30%;
+    left: -50%;
     width: 50%;
   }
   to {
-    width: 0px;
-    left: 58%;
+    width: 0%;
+    left: 18%;
   }
-}
-
-#homepage-main-content-box {
-  width: 50%;
-  height: 100%;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: rgb(0, 0, 0);
-  background-color: white;
-  text-align: center;
-  position: absolute;
-  overflow: hidden;
-}
-
-#homepage-text-container {
-  margin: auto;
-  padding-left: 12%;
-  justify-content: center;
-  text-align: center !important;
-  position: absolute;
-  
-  top: 20%;
-  left: 4%;
-
-  width: 60%;
-  
-  -ms-transform: translateY(-50%);
-  transform: translateY(0%);
-
-  /* font-size: 2em;
-  font-weight: 500;
-  line-height: 30px; */
-
-
-  /*Secondly Added CSS*/
-  /* padding: 10px;
-  position: relative;
-  top: 5%;
-  left: 4%;
-  height: 90%;
-  width: 90%;
-  background: #dd789a;
-  border-radius: 10px;
-  display: block;
-  align-items: center;
-  justify-content: center; */
 }
 
 .homepage-main-icon-box {
   width: 50%;
   height: 50%;
-  top: 77%;
+  top: 74%;
   left: 62.5%;
   position: fixed;
 }
@@ -114,14 +83,14 @@ h1{
 .homepage-main-icon-below-text {
   width: 50%;
   height: 50%;
-  top: 70%;
+  top: 67%;
   left: 61.5%;
   position: fixed;
   color: #ffffff;
   -webkit-text-stroke-color: black;
 }
 
-.homepage-sports-icons-container{
+.homepage-sports-icons-container {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -135,24 +104,55 @@ h1{
   margin: 15px;
 }
 
-.homepage-about-button{
-  background-color: #801336 !important; 
-  color: white !important;
+/*LEFT SIDE OF THE HOME PAGE*/
+.homepage-main-content-box {
+  width: 50%;
+  height: 100%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(255, 255, 255);
+  background-image: url("../../assets/Left.png");
+  text-align: center;
+  position: absolute;
+  overflow: hidden;
 }
 
-.homepage-about-button:hover{
-  background-color: #dd789a !important; 
-  color: white !important;
+.homepage-text-container {
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center !important;
+  position: absolute;
+  top: 12.5%;
+  left: 20%;
+  width: 60%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(0%);
 }
 
-.homepage-start-button{
-  background-color: #c72c41 !important;
+.homepage-about-button {
+  background-color: #801336 !important;
   color: white !important;
-  margin-left: 10px;
+  display: block;
+  margin-bottom: 10px;
+  width: 75%;
+  left: 12%;
 }
 
-.homepage-start-button:hover{
+.homepage-about-button:hover {
   background-color: #dd789a !important;
   color: white !important;
-  margin-left: 10px;
+}
+
+.homepage-contact-button {
+  background-color: #c72c41 !important;
+  color: white !important;
+  display: block;
+  width: 75%;
+  left: 12%;
+}
+
+.homepage-contact-button:hover {
+  background-color: #dd789a !important;
+  color: white !important;
 }
