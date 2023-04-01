@@ -16,6 +16,8 @@ import { SidenavComponent } from './components/sidenav/sidenav.component';
 import {MatSidenavModule} from "@angular/material/sidenav";
 import {MatCheckboxModule} from "@angular/material/checkbox";
 import {MatToolbarModule} from "@angular/material/toolbar";
+import { HomePageComponent } from './home-page/home-page.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,8 @@ import {MatToolbarModule} from "@angular/material/toolbar";
     LandingComponent,
     TableRowComponent,
     SessionTableComponent,
-    SidenavComponent
+    SidenavComponent,
+    HomePageComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +40,8 @@ import {MatToolbarModule} from "@angular/material/toolbar";
     MatButtonToggleModule,
     MatSidenavModule,
     MatCheckboxModule,
-    MatToolbarModule
+    MatToolbarModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
