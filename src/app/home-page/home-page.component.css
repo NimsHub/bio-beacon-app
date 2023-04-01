@@ -94,8 +94,11 @@ h1{
   height: 100%;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: rgb(0, 0, 0);
-  background-color: rgb(234, 189, 225);
+  color: rgb(255, 255, 255);
+  /* background-color: rgb(234, 189, 225); */
+  background-image: url("../../assets/Left.png");
+
+
   text-align: center;
   position: absolute;
   overflow: hidden;
@@ -155,7 +158,7 @@ h1{
   display: block;
   margin-bottom: 10px;
   width: 75%;
-  left: 10%;
+  left: 12%;
 }
 
 .homepage-about-button:hover{
@@ -168,7 +171,7 @@ h1{
   color: white !important;
   display: block;
   width: 75%;
-  left: 10%;
+  left: 12%;
 }
 
 .homepage-start-button:hover{
