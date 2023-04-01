@@ -1,16 +1,29 @@
-h1{
+h1 {
   font-size: 220%;
 }
 
-#homepage-main-container {
+.homepage-main-container {
   width: 100%;
   height: 100%;
   position: absolute;
   overflow: hidden;
 }
 
+.homepage-start-button {
+  background-color: #801336 !important;
+  color: white !important;
+  display: block;
+  width: 46.5%;
+  left: 3.5%;
+}
 
-#homepage-main-image-container {
+.homepage-start-button:hover {
+  background-color: #dd789a !important;
+  color: white !important;
+}
+
+/*RIGHT SIDE OF THE HOME PAGE*/
+.homepage-main-image-container {
   width: 50%;
   height: 100%;
   left: 50%;
@@ -44,7 +57,7 @@ h1{
   z-index: -1;
 }
 
-#homepage-main-image {
+.homepage-main-image {
   height: 50%;
 }
 
@@ -57,36 +70,6 @@ h1{
     width: 0%;
     left: 18%;
   }
-}
-
-#homepage-main-content-box {
-  width: 50%;
-  height: 100%;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: rgb(255, 255, 255);
-  background-image: url("../../assets/Left.png");
-
-
-  text-align: center;
-  position: absolute;
-  overflow: hidden;
-}
-
-#homepage-text-container {
-  margin: auto;
-  justify-content: center;
-  align-items: center;
-  text-align: center !important;
-  position: absolute;
-  
-  top: 12.5%;
-  left: 20%;
-
-  width: 60%;
-  
-  -ms-transform: translateY(-50%);
-  transform: translateY(0%);
 }
 
 .homepage-main-icon-box {
@@ -107,7 +90,7 @@ h1{
   -webkit-text-stroke-color: black;
 }
 
-.homepage-sports-icons-container{
+.homepage-sports-icons-container {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -119,12 +102,36 @@ h1{
   font-size: 20px;
   color: #ffffff;
   margin: 15px;
-
-  
 }
 
-.homepage-about-button{
-  background-color: #801336 !important; 
+/*LEFT SIDE OF THE HOME PAGE*/
+.homepage-main-content-box {
+  width: 50%;
+  height: 100%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(255, 255, 255);
+  background-image: url("../../assets/Left.png");
+  text-align: center;
+  position: absolute;
+  overflow: hidden;
+}
+
+.homepage-text-container {
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center !important;
+  position: absolute;
+  top: 12.5%;
+  left: 20%;
+  width: 60%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(0%);
+}
+
+.homepage-about-button {
+  background-color: #801336 !important;
   color: white !important;
   display: block;
   margin-bottom: 10px;
@@ -132,12 +139,12 @@ h1{
   left: 12%;
 }
 
-.homepage-about-button:hover{
-  background-color: #dd789a !important; 
+.homepage-about-button:hover {
+  background-color: #dd789a !important;
   color: white !important;
 }
 
-.homepage-contact-button{
+.homepage-contact-button {
   background-color: #c72c41 !important;
   color: white !important;
   display: block;
@@ -145,20 +152,7 @@ h1{
   left: 12%;
 }
 
-.homepage-contact-button:hover{
-  background-color: #dd789a !important;
-  color: white !important;
-}
-
-.homepage-start-button{
-  background-color: #801336 !important;
-  color: white !important;
-  display: block;
-  width: 46.5%;
-  left: 3.5%;
-}
-
-.homepage-start-button:hover{
+.homepage-contact-button:hover {
   background-color: #dd789a !important;
   color: white !important;
 }
