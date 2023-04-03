@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 h1 {
   font-size: 220%;
 }
@@ -9,26 +14,13 @@ h1 {
   overflow: hidden;
 }
 
-.homepage-start-button {
-  background-color: #801336 !important;
-  color: white !important;
-  display: block;
-  width: 46.5%;
-  left: 3.5%;
-}
-
-.homepage-start-button:hover {
-  background-color: #dd789a !important;
-  color: white !important;
-}
-
 /*RIGHT SIDE OF THE HOME PAGE*/
-.homepage-main-image-container {
+
+.homepage-main-right-container {
   width: 50%;
   height: 100%;
   left: 50%;
   position: absolute;
-  /* overflow: hidden; */
   background: rgb(45, 19, 44);
   background: linear-gradient(
     360deg,
@@ -43,7 +35,7 @@ h1 {
   width: 100%;
   height: 100%;
   position: absolute;
-  bottom: -17%;
+  bottom: -16%;
   left: 30%;
   animation: main-image-animation 3s forwards 0s;
 }
@@ -72,22 +64,24 @@ h1 {
   }
 }
 
+.homepage-main-icon-below-text {
+  width: 100%;
+  height: 100%;
+  top: 67%;
+  /* left: 23%; */
+  margin-bottom: 10px;
+  position:absolute;
+  color: #ffffff;
+  text-align: center;
+  -webkit-text-stroke-color: black;
+}
+
 .homepage-main-icon-box {
   width: 50%;
   height: 50%;
   top: 74%;
   left: 62.5%;
   position: fixed;
-}
-
-.homepage-main-icon-below-text {
-  width: 50%;
-  height: 50%;
-  top: 67%;
-  left: 61.5%;
-  position: fixed;
-  color: #ffffff;
-  -webkit-text-stroke-color: black;
 }
 
 .homepage-sports-icons-container {
@@ -104,8 +98,21 @@ h1 {
   margin: 15px;
 }
 
+.homepage-sign-in-button {
+  background-color: #801336 !important;
+  color: white !important;
+  display: block;
+  width: 46.5%;
+  left: 3.5%;
+}
+
+.homepage-sign-in-button:hover {
+  background-color: #dd789a !important;
+  color: white !important;
+}
 /*LEFT SIDE OF THE HOME PAGE*/
-.homepage-main-content-box {
+
+.homepage-main-left-box {
   width: 50%;
   height: 100%;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -156,3 +163,5 @@ h1 {
   background-color: #dd789a !important;
   color: white !important;
 }
+
+
