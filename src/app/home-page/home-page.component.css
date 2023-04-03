@@ -14,6 +14,64 @@ h1 {
   overflow: hidden;
 }
 
+/*LEFT SIDE OF THE HOME PAGE*/
+
+.homepage-main-left-box {
+  width: 50%;
+  height: 100%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(255, 255, 255);
+  background-image: url("../../assets/Left.png");
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.homepage-text-container {
+  margin: auto;
+  text-align: center !important;
+  position: absolute;
+  left: 20%;
+  width: 60%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.homepage-main-paragraph{
+  line-height: 2rem;
+  text-align: center;
+}
+
+.homepage-about-button {
+  background-color: #801336 !important;
+  color: white !important;
+  display: block;
+  margin-top: 10px;
+  width: 75%;
+  left: 12%;
+}
+
+.homepage-about-button:hover {
+  background-color: #dd789a !important;
+  color: white !important;
+}
+
+.homepage-contact-button {
+  background-color: #c72c41 !important;
+  color: white !important;
+  display: block;
+  margin-top: 10px;
+  position: absolute;
+  width: 75%;
+  left: 12%;
+}
+
+.homepage-contact-button:hover {
+  background-color: #dd789a !important;
+  color: white !important;
+}
+
 /*RIGHT SIDE OF THE HOME PAGE*/
 
 .homepage-main-right-container {
@@ -93,7 +151,6 @@ h1 {
   width: 100%;
   height: 100%;
   top: 77%;
-  /* left: 62.5%; */
   position: absolute;
   text-align: center;
 }
@@ -124,68 +181,54 @@ h1 {
   background-color: #dd789a !important;
   color: white !important;
 }
-/*LEFT SIDE OF THE HOME PAGE*/
 
-.homepage-main-left-box {
-  width: 50%;
-  height: 100%;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: rgb(255, 255, 255);
-  background-image: url("../../assets/Left.png");
-  text-align: center;
-  position: absolute;
-  overflow: hidden;
-}
+/*MEDIA QUERIES*/
 
-.homepage-text-container {
-  margin: auto;
-  justify-content: center;
-  align-items: center;
-  text-align: center !important;
-  position: absolute;
-  top: 12.5%;
-  left: 20%;
-  width: 60%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(0%);
-}
-
-.homepage-about-button {
-  background-color: #801336 !important;
-  color: white !important;
-  display: block;
-  margin-bottom: 10px;
-  width: 75%;
-  left: 12%;
-}
-
-.homepage-about-button:hover {
-  background-color: #dd789a !important;
-  color: white !important;
-}
-
-.homepage-contact-button {
-  background-color: #c72c41 !important;
-  color: white !important;
-  display: block;
-  width: 75%;
-  left: 12%;
-}
-
-.homepage-contact-button:hover {
-  background-color: #dd789a !important;
-  color: white !important;
-}
-
-
-@media only screen and (max-width: 880px) {
+@media only screen and (max-width: 890px) {
   .homepage-sign-button-box {
     margin-top: 15px;
   }
 
   .homepage-main-icon-box {
     margin-top: 15px;
+  }
+}
+
+@media only screen and (max-width: 1030px) {
+  .homepage-text-container {
+    left: 15%;
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .homepage-text-container {
+    left: 10%;
+    width: 80%;
+  }
+
+  .homepage-main-paragraph{
+    line-height: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .homepage-text-container {
+    left: 5%;
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .homepage-main-paragraph{
+    line-height: 1.25rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .homepage-text-container {
+    left: 2.5%;
+    width: 95%;
   }
 }
 
