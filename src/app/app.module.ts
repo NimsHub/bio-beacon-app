@@ -18,6 +18,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { ContatUsComponent } from './contat-us/contat-us.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     MatSidenavModule,
     MatCheckboxModule,
     MatToolbarModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent],
