@@ -1,0 +1,133 @@
+<div class="container">
+  <!-- <span class="big-circle"></span> -->
+  <!-- <img src="../../assets/shape.png" class="square" alt="" /> -->
+  <div class="form">
+    <div class="contact-info">
+      <h3 class="title">Let's getting touch</h3>
+      <p class="text">
+        Thank you for your interest in Bio Beacon! We're always happy to hear from our users and welcome any feedback or questions you may have. Whether you need technical assistance, have a suggestion for a new feature, or just want to share your experience using Bio Beacon, our team is here to help. Get in touch with us today and let us know how we can assist you in optimizing your athletic performance.
+      </p>
+      <div class="info">
+        <div class="information">
+          <!-- <img src="../../assets/location.png" class="icon" alt="" /> -->
+          <fa-icon [icon]="faLocationDot" class="icon" alt="" />
+          <p>Hapugala Road, Galle, Sri Lanka</p>
+        </div>
+        <div class="information">
+          <fa-icon [icon]="faEnvelope" class="icon" alt="" />
+          <p>lorem@ipsum.com</p>
+        </div>
+        <div class="information">
+          <fa-icon [icon]="faPhoneVolume" class="icon" alt="" />
+          <p>+94 79 123 4567</p>
+        </div>
+      </div>
+
+      <div class="social-media">
+        <p>Connect with us :</p>
+        <div class="social-icons">
+          <a href="#">
+            <fa-icon [icon]="faSquareFacebook"></fa-icon>
+          </a>
+          <a href="#">
+            <fa-icon [icon]="faSquareTwitter"></fa-icon>
+          </a>
+          <a href="#">
+            <fa-icon [icon]="faLinkedin"></fa-icon>
+          </a>
+          <a href="#">
+            <fa-icon [icon]="faSquareInstagram"></fa-icon>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <span class="circle one"></span>
+      <span class="circle two"></span>
+      <form>
+        <h3 class="title">Contact us</h3>
+        <div class="row">
+          <p>
+            <mat-form-field appearance="outline" color="accent">
+              <mat-label>Userame</mat-label>
+              <input
+                [formControl]="userName"
+                matInput
+                placeholder="Steven"
+                type="text"
+              />
+              <mat-error *ngIf="userName.hasError('required')">
+                First Name is <strong>required</strong>
+              </mat-error>
+            </mat-form-field>
+          </p>
+        </div>
+
+        <div class="row">
+          <p>
+            <mat-form-field appearance="outline">
+              <mat-label>Mobile</mat-label>
+              <input
+                [formControl]="mobile"
+                matInput
+                placeholder="079xxxxxxx"
+                type="phone"
+              />
+              <mat-error *ngIf="mobile.hasError('required')">
+                Mobile No is <strong>required</strong>
+              </mat-error>
+            </mat-form-field>
+          </p>
+        </div>
+
+        <div *ngIf="role.value" class="row">
+          <p>
+            <mat-form-field appearance="outline">
+              <mat-label>Email</mat-label>
+              <input
+                [formControl]="userEmail"
+                matInput
+                placeholder="example@gmail.com"
+                type="email"
+              />
+              <mat-error
+                *ngIf="
+                  userEmail.hasError('email') && !userEmail.hasError('required')
+                "
+              >
+                Please enter a valid email
+              </mat-error>
+              <mat-error *ngIf="userEmail.hasError('required')">
+                Email is <strong>required</strong>
+              </mat-error>
+            </mat-form-field>
+          </p>
+        </div>
+
+        <div class="row">
+          <p>
+            <mat-form-field appearance="outline">
+              <mat-label>Message</mat-label>
+              <textarea
+                class="textarea"
+                matInput
+                [formControl]="message"
+                matInput
+                placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing."
+                type="phone"
+              ></textarea>
+              <mat-error *ngIf="message.hasError('required')">
+                Mobile No is <strong>required</strong>
+              </mat-error>
+            </mat-form-field>
+          </p>
+        </div>
+
+        <button color="accent" id="submit-btn" mat-flat-button>
+          Send Message
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
