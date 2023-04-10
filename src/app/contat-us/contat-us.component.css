@@ -10,7 +10,7 @@
     width: 100%;
     min-height: 100vh;
     padding: 2rem;
-    background-color: #2D132C;
+    background-image: url('../../assets/contact-us-background.jpg');
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -98,7 +98,6 @@
     margin-top: 5px;
     align-items: center;
     gap: 10px;
-  
   }
   
   .row p {
@@ -163,6 +162,8 @@
   .text {
     color: #ffffff;
     margin: 1.5rem 0 2rem 0;
+    font-size: 0.95rem;
+    line-height: 1.5rem;
   }
   
   .information {

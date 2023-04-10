@@ -1,6 +1,4 @@
 <div class="container">
-  <!-- <span class="big-circle"></span> -->
-  <!-- <img src="../../assets/shape.png" class="square" alt="" /> -->
   <div class="form">
     <div class="contact-info">
       <h3 class="title">Let's getting touch</h3>
@@ -9,7 +7,6 @@
       </p>
       <div class="info">
         <div class="information">
-          <!-- <img src="../../assets/location.png" class="icon" alt="" /> -->
           <fa-icon [icon]="faLocationDot" class="icon" alt="" />
           <p>Hapugala Road, Galle, Sri Lanka</p>
         </div>
@@ -50,7 +47,7 @@
         <div class="row">
           <p>
             <mat-form-field appearance="outline" color="accent">
-              <mat-label>Userame</mat-label>
+              <mat-label>Username</mat-label>
               <input
                 [formControl]="userName"
                 matInput
@@ -58,7 +55,7 @@
                 type="text"
               />
               <mat-error *ngIf="userName.hasError('required')">
-                First Name is <strong>required</strong>
+                Username is <strong>required</strong>
               </mat-error>
             </mat-form-field>
           </p>
@@ -67,7 +64,7 @@
         <div class="row">
           <p>
             <mat-form-field appearance="outline">
-              <mat-label>Mobile</mat-label>
+              <mat-label>Mobile No</mat-label>
               <input
                 [formControl]="mobile"
                 matInput
@@ -118,7 +115,7 @@
                 type="phone"
               ></textarea>
               <mat-error *ngIf="message.hasError('required')">
-                Mobile No is <strong>required</strong>
+                Message is <strong>required</strong>
               </mat-error>
             </mat-form-field>
           </p>
