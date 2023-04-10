@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+.aboutpage-hero-section{
+    height: 100vh;
+    width: 100%;
+    /* background-image: url("../../assets/LeftBackground.jpg");
+    background-size: cover;
+    background-position: center; */
+}
+
+.aboutpage-hero-content-box{
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+    background-image: url("../../assets/LeftBackground.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.aboutpage-hero-content{
+    width: 80%;
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    top: 38%;
+    transform: translateY(-50%);
+
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.aboutpage-hero-image-box{
+    position: absolute;
+    height: 100vh;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+    background-color: #2D132C;
+
+    /* background-image: url("../../assets/bio-beacon-logo.png");
+    background-size: cover;
+    background-position: center; */
+}
+

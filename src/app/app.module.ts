@@ -16,6 +16,7 @@ import { SidenavComponent } from './components/sidenav/sidenav.component';
 import {MatSidenavModule} from "@angular/material/sidenav";
 import {MatCheckboxModule} from "@angular/material/checkbox";
 import {MatToolbarModule} from "@angular/material/toolbar";
+import { AboutUsComponent } from './about-us/about-us.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import {MatToolbarModule} from "@angular/material/toolbar";
     LandingComponent,
     TableRowComponent,
     SessionTableComponent,
-    SidenavComponent
+    SidenavComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,
