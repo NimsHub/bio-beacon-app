@@ -75,3 +75,61 @@
 .aboutpage-breif-text{
     line-height: 2rem;
 }
+
+/*Features Section*/
+.aboutpage-features-section{
+    height: 240px;
+    width: 100%;
+    background-color: teal;
+}
+
+.aboutpage-features-wrapper{
+    box-sizing: content-box;
+    background-color: #a54343;
+    height: 120px;
+    padding: 50px 30px;
+    display: flex;
+    box-shadow: 0 20px 25px rgba(0,0,0,0.2);
+    font-size: 60px;
+    font-weight: 500;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+}
+
+span{
+    display: block;
+    height: 100%;
+    padding-left: 10px;
+    color: #0E6FFC;
+    animation: spin_words 6s infinite;
+}
+
+@keyframes spin_words {
+    10%{
+        transform: translateY(-112%);
+    }
+    25%{
+        transform: translateY(-100%);
+    }
+    35%{
+        transform: translateY(-212%);
+    }
+    50%{
+        transform: translateY(-200%);
+    }
+    60%{
+        transform: translateY(-312%);
+    }
+    75%{
+        transform: translateY(-300%);
+    }
+    85%{
+        transform: translateY(-412%);
+    }
+    100%{
+        transform: translateY(-400%);
+    }
+}
