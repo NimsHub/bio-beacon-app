@@ -143,4 +143,16 @@ span{
     }
 }
 
+@media only screen and (max-width: 740px) {
+    .aboutpage-features-wrapper{
+        font-size: 50px;
+    }
+  }
+
+  @media only screen and (max-width: 625px) {
+    .aboutpage-features-wrapper{
+        font-size: 45px;
+    }
+  }
+
 /*End-Features Section*/
