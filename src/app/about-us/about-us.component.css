@@ -5,61 +5,18 @@
     box-sizing: border-box;
 }
 
+/*Start-Hero Section*/
 .aboutpage-hero-section{
     height: 100vh;
     width: 100%;
-    background-image: url("../../assets/LeftBackground.jpg");
+    background-image: url("../../assets/hero-background-image-1.jpg");
+    /* background-image: url("../../assets/hero-background-image-2.jpg"); */
     background-size: cover;
     background-position:center;
 }
 
-/*Start-Sample 01*/
-
-/* .aboutpage-hero-content-box{
-    position: absolute;
-    width: 50%;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: center;
-    color: #fff;
-    background-image: url("../../assets/LeftBackground.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-}
-
-.aboutpage-hero-content{
-    width: 80%;
-    position: absolute;
-    text-align: center;
-    color: #fff;
-    top: 38%;
-    transform: translateY(-50%);
-
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.aboutpage-hero-image-box{
-    position: absolute;
-    height: 100vh;
-    width: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%);
-    text-align: center;
-    color: #fff;
-    background-color: #2D132C;
-} */
-
-/*End-Sample 01*/
-
-
-/*Start-Sample 02*/
-
-
 .aboutpage-hero-content-box{
-    width: 40%;
+    width: 100%;
     position: absolute;
     text-align: center;
     color: #ffffff;
@@ -70,9 +27,22 @@
     transform: translateX(-50%);
 }
 
+.aboutpage-hero-breif-text-box{
+    width: 30%;
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+    top: 45%;
+    transform: translateY(-50%);
+
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+}
+
 .aboutpage-hero-image{
     width: 50%;
-    margin-top: 5px;
+    margin-top: 10px;
 
 }
 
@@ -80,13 +50,41 @@
     font-size: 5rem;
 }
 
-.aboutpage-breif-text{
+.aboutpage-hero-breif-text{
     line-height: 2rem;
 }
 
-/*End-Sample 02*/
+@media only screen and (max-width: 1275px) {
+    .aboutpage-hero-breif-text-box{
+        width: 40%;
+    }
+  }
 
-/*Features Section*/
+  @media only screen and (max-width: 965px) {
+    .aboutpage-hero-breif-text-box{
+        width: 45%;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .aboutpage-hero-breif-text-box{
+        width: 50%;
+    }
+  }
+
+  @media only screen and (max-width: 715px) {
+    .aboutpage-hero-breif-text-box{
+        width: 55%;
+    }
+
+    .aboutpage-hero-breif-text{
+        line-height: 1.5rem;
+    }
+  }
+
+/*End-Hero Section*/
+
+/*Start-Features Section*/
 .aboutpage-features-section{
     height: 200px;
     width: 100%;
@@ -144,3 +142,5 @@ span{
         transform: translateY(-400%);
     }
 }
+
+/*End-Features Section*/
