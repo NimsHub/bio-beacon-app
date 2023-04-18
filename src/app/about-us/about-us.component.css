@@ -34,7 +34,6 @@
     color: #ffffff;
     top: 45%;
     transform: translateY(-50%);
-
     left: 50%;
     transform: translateX(-50%);
     display: block;
@@ -86,48 +85,55 @@
 
 /* Start - Product Description Section */
 
-.container{
-    width: 80%;
+.aboutpage-product-description-container{
+    width: 100%;
     display: block;
     margin: auto;
     background-color: #ffffff;
     overflow: hidden;
 }
 
-.content-section{
+.aboutpage-product-description-content-section{
     float: left;
-    width: 55%;
+    width: 60%;
     text-align: center;
 }
 
-.image-section{
+.aboutpage-product-description-content{
+    width: 80%;
+    position: relative;
+    top: 60%;
+    transform: translateY(50%);
+}
+
+.aboutpage-product-description-image-section{
     width: 40%;
     float: right;
 }
 
-.image-section img{
+.aboutpage-product-description-image-section img{
     width: 100%;
     height: auto;
 }
 
-.content-section .title{
+.aboutpage-product-description-content-section .title{
     text-transform: uppercase;
     font-size: 28px;
 }
 
-.content-section .content h3{
+.aboutpage-product-description-content h3{
     margin-top: 20px;
     color: #5d5d5d;
     font-size: 21px;
 }
 
-.content-section .content p{
+.aboutpage-product-description-content p{
     margin-top: 10px;
     font-size: 18px;
     line-height: 1.5;
 }
 
-.content-section .content .button a{
+.aboutpage-product-description-content .button a{
     background-color: #3d3d3d;
     padding: 12px 40px;
     text-decoration: none;
@@ -136,7 +142,7 @@
     letter-spacing: 1.5px;
 }
 
-.content-section .content .button a:hover{
+.aboutpage-product-description-content .button a:hover{
     background-color: #a52a2a;
     color: #ffffff;
 }
