@@ -1,223 +1,254 @@
-*{
-    padding: 0;
-    margin: 0;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
 }
 
 /*Start-Hero Section*/
-.aboutpage-hero-section{
-    height: 100vh;
-    width: 100%;
-    background-image: url("../../assets/hero-background-image-1.jpg");
-    /* background-image: url("../../assets/hero-background-image-2.jpg"); */
-    background-size: cover;
-    background-position:center;
+.aboutpage-hero-section {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../../assets/hero-background-image-1.jpg");
+  /* background-image: url("../../assets/hero-background-image-2.jpg"); */
+  background-size: cover;
+  background-position: center;
 }
 
-.aboutpage-hero-content-box{
-    width: 100%;
-    position: absolute;
-    text-align: center;
-    color: #ffffff;
-    top: 8%;
-    transform: translateY(-50%);
+.aboutpage-hero-content-box {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  color: #ffffff;
+  top: 8%;
+  transform: translateY(-50%);
 
-    left: 50%;
-    transform: translateX(-50%);
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.aboutpage-hero-breif-text-box{
-    width: 30%;
-    position: relative;
-    text-align: center;
-    color: #ffffff;
-    top: 45%;
-    transform: translateY(-50%);
-    left: 50%;
-    transform: translateX(-50%);
-    display: block;
+.aboutpage-hero-breif-text-box {
+  width: 30%;
+  position: relative;
+  text-align: center;
+  color: #ffffff;
+  top: 45%;
+  transform: translateY(-50%);
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
 }
 
-.aboutpage-hero-image{
-    width: 50%;
-    margin-top: 10px;
-
+.aboutpage-hero-image {
+  width: 50%;
+  margin-top: 10px;
 }
 
-.aboutpage-welcome-text-heading{
-    font-size: 5rem;
+.aboutpage-welcome-text-heading {
+  font-size: 5rem;
 }
 
-.aboutpage-hero-breif-text{
-    line-height: 2rem;
+.aboutpage-hero-breif-text {
+  line-height: 2rem;
 }
 
 @media only screen and (max-width: 1275px) {
-    .aboutpage-hero-breif-text-box{
-        width: 40%;
-    }
+  .aboutpage-hero-breif-text-box {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 965px) {
+  .aboutpage-hero-breif-text-box {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .aboutpage-hero-breif-text-box {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 715px) {
+  .aboutpage-hero-breif-text-box {
+    width: 55%;
   }
 
-  @media only screen and (max-width: 965px) {
-    .aboutpage-hero-breif-text-box{
-        width: 45%;
-    }
+  .aboutpage-hero-breif-text {
+    line-height: 1.5rem;
   }
-
-  @media only screen and (max-width: 800px) {
-    .aboutpage-hero-breif-text-box{
-        width: 50%;
-    }
-  }
-
-  @media only screen and (max-width: 715px) {
-    .aboutpage-hero-breif-text-box{
-        width: 55%;
-    }
-
-    .aboutpage-hero-breif-text{
-        line-height: 1.5rem;
-    }
-  }
+}
 
 /*End-Hero Section*/
 
 /* Start - Product Description Section */
 
-.aboutpage-product-description-container{
-    width: 100%;
-    display: block;
-    margin: auto;
-    background-color: #ffffff;
-    overflow: hidden;
+.aboutpage-product-description-container {
+  width: 100%;
+  display: block;
+  margin: auto;
+  background-color: #ffffff;
+  overflow: hidden;
 }
 
-.aboutpage-product-description-content-section{
-    float: left;
-    width: 60%;
-    text-align: center;
+.aboutpage-product-description-content-section {
+  float: left;
+  width: 60%;
+  text-align: center;
 }
 
-.aboutpage-product-description-content{
-    width: 80%;
-    position: relative;
-    top: 60%;
-    transform: translateY(50%);
-}
-
-.aboutpage-product-description-image-section{
-    width: 40%;
-    float: right;
-}
-
-.aboutpage-product-description-image-section img{
-    width: 100%;
-    height: auto;
-}
-
-.aboutpage-product-description-content-section .title{
-    text-transform: uppercase;
-    font-size: 28px;
-}
-
-.aboutpage-product-description-content h3{
-    margin-top: 20px;
-    color: #5d5d5d;
-    font-size: 21px;
+.aboutpage-product-description-content {
+  width: 60%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, +45%);
 }
 
 .aboutpage-product-description-content p{
-    margin-top: 10px;
-    font-size: 18px;
-    line-height: 1.5;
+    font-size: 2rem;
+    line-height: 2rem;
 }
 
-.aboutpage-product-description-content .button a{
-    background-color: #3d3d3d;
-    padding: 12px 40px;
-    text-decoration: none;
-    color: #000000;
-    font-size: 25px;
-    letter-spacing: 1.5px;
+.aboutpage-product-description-image-section {
+  width: 40%;
+  float: right;
 }
 
-.aboutpage-product-description-content .button a:hover{
-    background-color: #a52a2a;
-    color: #ffffff;
+.aboutpage-product-description-image-section img {
+  width: 100%;
+  height: auto;
+}
+
+.aboutpage-product-description-content-section .title {
+  text-transform: uppercase;
+  font-size: 28px;
+}
+
+.aboutpage-product-description-content h3 {
+  margin-top: 20px;
+  color: #5d5d5d;
+  font-size: 21px;
+}
+
+.aboutpage-product-description-content p {
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.aboutpage-product-description-content .button a {
+  background-color: #3d3d3d;
+  padding: 12px 40px;
+  text-decoration: none;
+  color: #000000;
+  font-size: 25px;
+  letter-spacing: 1.5px;
+}
+
+.aboutpage-product-description-content .button a:hover {
+  background-color: #a52a2a;
+  color: #ffffff;
 }
 
 /* End - Product Description Section */
 
+/*Start - Device Details Section*/
+
+.aboutpage-device-section {
+  width: 100%;
+  background-color: #801336;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.aboutpage-device-card{
+  display: inline-block;
+  margin: 20px;
+  /* margin-left: 10px; */
+}
+
+.aboutpage-device-card:hover{
+  transform: scale(1.025);
+}
+
+.example-card {
+  max-width: 400px;
+}
+
+/*End - Device Details Section*/
+
 /*Start-Features Section*/
-.aboutpage-features-section{
-    height: 200px;
-    width: 100%;
-    background-color: #ffffff;
+.aboutpage-features-section {
+  height: 200px;
+  width: 100%;
+  background-color: #ffffff;
 }
 
-.aboutpage-features-wrapper{
-    box-sizing: content-box;
-    background-color: #ffffff;
-    height: 120px;
-    padding-top: 60px;
-    display: flex;
-    font-size: 60px;
-    font-weight: 500;
-    overflow: hidden;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    justify-content: center;
-    
+.aboutpage-features-wrapper {
+  box-sizing: content-box;
+  background-color: #ffffff;
+  height: 120px;
+  padding-top: 60px;
+  display: flex;
+  font-size: 60px;
+  font-weight: 500;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  justify-content: center;
 }
 
-span{
-    display: block;
-    height: 100%;
-    padding-left: 10px;
-    color: #801336;
-    animation: spin_words 6s infinite;
+span {
+  display: block;
+  height: 100%;
+  padding-left: 10px;
+  color: #801336;
+  animation: spin_words 6s infinite;
 }
 
 @keyframes spin_words {
-    10%{
-        transform: translateY(-108%);
-    }
-    25%{
-        transform: translateY(-100%);
-    }
-    35%{
-        transform: translateY(-208%);
-    }
-    50%{
-        transform: translateY(-200%);
-    }
-    60%{
-        transform: translateY(-308%);
-    }
-    75%{
-        transform: translateY(-300%);
-    }
-    85%{
-        transform: translateY(-418%);
-    }
-    100%{
-        transform: translateY(-400%);
-    }
+  10% {
+    transform: translateY(-108%);
+  }
+  25% {
+    transform: translateY(-100%);
+  }
+  35% {
+    transform: translateY(-208%);
+  }
+  50% {
+    transform: translateY(-200%);
+  }
+  60% {
+    transform: translateY(-308%);
+  }
+  75% {
+    transform: translateY(-300%);
+  }
+  85% {
+    transform: translateY(-418%);
+  }
+  100% {
+    transform: translateY(-400%);
+  }
 }
 
 @media only screen and (max-width: 740px) {
-    .aboutpage-features-wrapper{
-        font-size: 50px;
-    }
+  .aboutpage-features-wrapper {
+    font-size: 50px;
   }
+}
 
-  @media only screen and (max-width: 625px) {
-    .aboutpage-features-wrapper{
-        font-size: 45px;
-    }
+@media only screen and (max-width: 625px) {
+  .aboutpage-features-wrapper {
+    font-size: 45px;
   }
+}
 
 /*End-Features Section*/
