@@ -107,9 +107,9 @@
   transform: translate(-50%, +45%);
 }
 
-.aboutpage-product-description-content p{
-    font-size: 2rem;
-    line-height: 2rem;
+.aboutpage-product-description-content p {
+  font-size: 2rem;
+  line-height: 2rem;
 }
 
 .aboutpage-product-description-image-section {
@@ -165,12 +165,12 @@
   overflow: hidden;
 }
 
-.aboutpage-device-card{
+.aboutpage-device-card {
   display: inline-block;
   margin: 20px;
 }
 
-.aboutpage-device-card:hover{
+.aboutpage-device-card:hover {
   transform: scale(1.025);
 }
 
@@ -204,7 +204,7 @@
   justify-content: center;
 }
 
-span {
+.aboutpage-feature-words-span {
   display: block;
   height: 100%;
   padding-left: 10px;
@@ -252,3 +252,82 @@ span {
 }
 
 /*End-Features Section*/
+
+/*Start - Footer Section*/
+footer {
+  background-color: #111;
+}
+
+.aboutpage-footer-section {
+  width: 100%;
+  padding: 70px 30px 20px;
+}
+
+.aboutpage-social-media {
+  display: flex;
+  justify-content: center;
+}
+
+.aboutpage-social-media a {
+  text-decoration: none;
+  padding: 10px;
+  background-color: #fff;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.aboutpage-social-media a fa-icon {
+  font-size: 1.5rem;
+  color: #801336;
+  opacity: 0.9;
+}
+
+.aboutpage-social-media a:hover {
+  background-color: #111;
+  transition: 0.5s;
+}
+
+.aboutpage-social-media a:hover fa-icon {
+  background-color: #111;
+  transition: 0.5s;
+}
+
+.aboutpage-footer-nav {
+  margin: 30px 0px;
+}
+
+.aboutpage-footer-nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+.aboutpage-footer-nav ul li a{
+  color: #fff;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.aboutpage-footer-nav ul li a:hover{
+  opacity: 1.0;
+}
+
+.aboutpage-footer-bottom{
+  background-color: #000000;
+  padding: 20px;
+  text-align: center;
+}
+
+.aboutpage-footer-bottom p{
+  color: #fff;
+}
+
+.aboutpage-footer-company{
+  opacity: 0.7;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+/*End - Footer Section*/
