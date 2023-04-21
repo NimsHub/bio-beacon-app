@@ -168,7 +168,6 @@
 .aboutpage-device-card{
   display: inline-block;
   margin: 20px;
-  /* margin-left: 10px; */
 }
 
 .aboutpage-device-card:hover{
@@ -176,7 +175,8 @@
 }
 
 .example-card {
-  max-width: 400px;
+  max-width: 300px;
+  min-height: 625px;
 }
 
 /*End - Device Details Section*/
