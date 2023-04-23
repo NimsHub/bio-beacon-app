@@ -104,12 +104,12 @@
   position: relative;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, +45%);
+  transform: translate(-50%, +22%);
 }
 
 .aboutpage-product-description-content p {
-  font-size: 2rem;
-  line-height: 2rem;
+  font-size: 1.5rem;
+  line-height: 2.0rem;
 }
 
 .aboutpage-product-description-image-section {
@@ -122,37 +122,76 @@
   height: auto;
 }
 
-.aboutpage-product-description-content-section .title {
-  text-transform: uppercase;
-  font-size: 28px;
+@media only screen and (max-width: 1380px) {
+  .aboutpage-product-description-content {
+    width: 65%;
+    transform: translate(-50%, +10%);
+  }
+  
+  .aboutpage-product-description-content p {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
 }
 
-.aboutpage-product-description-content h3 {
-  margin-top: 20px;
-  color: #5d5d5d;
-  font-size: 21px;
+@media only screen and (max-width: 1235px) {
+  .aboutpage-product-description-content {
+    width: 70%;
+    transform: translate(-50%, +15%);
+  }
 }
 
-.aboutpage-product-description-content p {
-  margin-top: 10px;
-  font-size: 18px;
-  line-height: 1.5;
+@media only screen and (max-width: 1180px) {
+  .aboutpage-product-description-content {
+    width: 75%;
+    transform: translate(-50%, +10%);
+  }
+  
+  .aboutpage-product-description-content p {
+    line-height: 1.65rem;
+  }
 }
 
-.aboutpage-product-description-content .button a {
-  background-color: #3d3d3d;
-  padding: 12px 40px;
-  text-decoration: none;
-  color: #000000;
-  font-size: 25px;
-  letter-spacing: 1.5px;
+@media only screen and (max-width: 1110px) {
+  .aboutpage-product-description-content {
+    width: 80%;
+    transform: translate(-50%, +15%);
+  }
+  
+  .aboutpage-product-description-content p {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
 }
 
-.aboutpage-product-description-content .button a:hover {
-  background-color: #a52a2a;
-  color: #ffffff;
+@media only screen and (max-width: 970px) {
+  .aboutpage-product-description-content {
+    width: 90%;
+    transform: translate(-50%, +5%);
+  }
+  
+  .aboutpage-product-description-content p {
+    font-size: 1.15rem;
+    line-height: 1.45rem;
+  }
 }
 
+@media only screen and (max-width: 795px) {
+  .aboutpage-product-description-content {
+    width: 95%;
+  }
+  
+  .aboutpage-product-description-content p {
+    line-height: 1.25rem;
+  }
+}
+
+@media only screen and (max-width: 735px) {
+  .aboutpage-product-description-content p {
+    font-size: 1.0rem;
+    line-height: 1.2rem;
+  }
+}
 /* End - Product Description Section */
 
 /*Start - Device Details Section*/
@@ -176,7 +215,11 @@
 
 .example-card {
   max-width: 300px;
-  min-height: 625px;
+  min-height: 620px;
+}
+
+.aboutpage-device-description{
+  margin-top: 10px;
 }
 
 /*End - Device Details Section*/
@@ -270,7 +313,7 @@ footer {
 
 .aboutpage-social-media a {
   text-decoration: none;
-  padding: 10px;
+  padding: 12px;
   background-color: #fff;
   margin: 10px;
   border-radius: 50%;
