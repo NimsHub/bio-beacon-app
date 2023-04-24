@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { faSquareFacebook, faLinkedin, faSquareInstagram, faSquareTwitter} from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-about-us',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./about-us.component.css']
 })
 export class AboutUsComponent {
-
+  faSquareFacebook = faSquareFacebook;
+  faSquareTwitter = faSquareTwitter;
+  faLinkedin = faLinkedin;
+  faSquareInstagram = faSquareInstagram;
 }

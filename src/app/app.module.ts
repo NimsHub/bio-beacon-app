@@ -18,6 +18,7 @@ import {MatCheckboxModule} from "@angular/material/checkbox";
 import {MatToolbarModule} from "@angular/material/toolbar";
 import { AboutUsComponent } from './about-us/about-us.component';
 import {MatCardModule} from '@angular/material/card';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import {MatCardModule} from '@angular/material/card';
     MatSidenavModule,
     MatCheckboxModule,
     MatToolbarModule,
-    MatCardModule
+    MatCardModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
