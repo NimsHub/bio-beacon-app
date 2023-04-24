@@ -18,6 +18,8 @@ import {MatCheckboxModule} from "@angular/material/checkbox";
 import {MatToolbarModule} from "@angular/material/toolbar";
 import { HomePageComponent } from './home-page/home-page.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ContatUsComponent } from './contat-us/contat-us.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     TableRowComponent,
     SessionTableComponent,
     SidenavComponent,
+    ContatUsComponent,
     HomePageComponent
   ],
   imports: [
@@ -41,6 +44,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     MatSidenavModule,
     MatCheckboxModule,
     MatToolbarModule,
+    MatFormFieldModule,
     FontAwesomeModule
   ],
   providers: [],
