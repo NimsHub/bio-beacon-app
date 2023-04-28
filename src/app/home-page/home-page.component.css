@@ -1,0 +1,235 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 220%;
+}
+
+.homepage-main-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+
+/*LEFT SIDE OF THE HOME PAGE*/
+
+.homepage-main-left-box {
+  width: 50%;
+  height: 100%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(255, 255, 255);
+  background-image: url("../../assets/Left.png");
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.homepage-text-container {
+  margin: auto;
+  text-align: center !important;
+  position: absolute;
+  left: 20%;
+  width: 60%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.homepage-main-paragraph{
+  line-height: 2rem;
+  text-align: center;
+}
+
+.homepage-about-button {
+  background-color: #801336 !important;
+  color: white !important;
+  display: block;
+  margin-top: 10px;
+  width: 75%;
+  left: 12%;
+}
+
+.homepage-about-button:hover {
+  background-color: #dd789a !important;
+  color: white !important;
+}
+
+.homepage-contact-button {
+  background-color: #c72c41 !important;
+  color: white !important;
+  display: block;
+  margin-top: 10px;
+  position: absolute;
+  width: 75%;
+  left: 12%;
+}
+
+.homepage-contact-button:hover {
+  background-color: #dd789a !important;
+  color: white !important;
+}
+
+/*RIGHT SIDE OF THE HOME PAGE*/
+
+.homepage-main-right-container {
+  width: 50%;
+  height: 100%;
+  left: 50%;
+  position: absolute;
+  background: rgb(45, 19, 44);
+  background: linear-gradient(
+    360deg,
+    rgba(45, 19, 44, 1) 0%,
+    rgba(128, 19, 54, 1) 35%,
+    rgba(199, 44, 65, 1) 62%,
+    rgba(238, 69, 64, 1) 100%
+  );
+}
+
+.homepage-main-image-box {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: -16%;
+  left: 30%;
+  animation: main-image-animation 3s forwards 0s;
+
+  text-align: center;
+}
+
+.homepage-main-image-box:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0%;
+  z-index: -1;
+
+  text-align: center;
+}
+
+.homepage-main-image {
+  height: 50%;
+}
+
+@keyframes main-image-animation {
+  from {
+    left: -50%;
+    width: 50%;
+  }
+  to {
+    width: 0%;
+    left: 18%;
+  }
+}
+
+.homepage-main-icon-below-text {
+  width: 100%;
+  height: 100%;
+  top: 67%;
+  /* left: 23%; */
+  /* margin-bottom: 10px; */
+  position:absolute;
+  color: #ffffff;
+  text-align: center;
+  -webkit-text-stroke-color: black;
+}
+
+.homepage-sign-button-box {
+  width: 100%;
+  height: 100%;
+  top: 72%;
+  position: absolute;
+  text-align: center !important;
+  left: 26%;
+}
+
+.homepage-main-icon-box {
+  width: 100%;
+  height: 100%;
+  top: 77%;
+  position: absolute;
+  text-align: center;
+}
+
+.homepage-sports-icons-container {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #ffffff;
+  margin: 15px;
+}
+
+.homepage-sign-in-button {
+  background-color: #801336 !important;
+  color: white !important;
+  display: block;
+  width: 46.5%;
+  /* left: 3.5%; */
+}
+
+.homepage-sign-in-button:hover {
+  background-color: #dd789a !important;
+  color: white !important;
+}
+
+/*MEDIA QUERIES*/
+
+@media only screen and (max-width: 890px) {
+  .homepage-sign-button-box {
+    margin-top: 15px;
+  }
+
+  .homepage-main-icon-box {
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (max-width: 1030px) {
+  .homepage-text-container {
+    left: 15%;
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .homepage-text-container {
+    left: 10%;
+    width: 80%;
+  }
+
+  .homepage-main-paragraph{
+    line-height: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .homepage-text-container {
+    left: 5%;
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .homepage-main-paragraph{
+    line-height: 1.25rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .homepage-text-container {
+    left: 2.5%;
+    width: 95%;
+  }
+}
+
+
