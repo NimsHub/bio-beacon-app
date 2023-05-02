@@ -4,7 +4,7 @@ import { HomePageComponent } from "./home-page/home-page.component";
 import { ContatUsComponent } from "./contat-us/contat-us.component";
 import { LoginComponent } from "./components/login/login.component";
 
-const appRoute: Routes = [
+const appRoutes: Routes = [
     {path:'', component: HomePageComponent},
     {path: 'contact-us', component: ContatUsComponent},
     {path: 'sign-in', component: LoginComponent}
@@ -12,7 +12,7 @@ const appRoute: Routes = [
 
 @NgModule({
     imports:[
-        RouterModule.forRoot(appRoute)
+        RouterModule.forRoot(appRoutes)
     ],
     exports: [
         RouterModule
