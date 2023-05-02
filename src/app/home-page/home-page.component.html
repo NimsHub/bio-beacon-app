@@ -11,7 +11,7 @@
       </div>
 
       <div class="homepage-sign-button-box">
-        <a routerLink = '/sign-in'><button mat-raised-button class="homepage-sign-in-button">Sign In</button></a>
+        <button (click)="signInClicked()" mat-raised-button class="homepage-sign-in-button">Sign In</button>
       </div>
 
       <div class="homepage-main-icon-box">
@@ -51,8 +51,8 @@
         performance to the next level and reach new heights in your sport.
       </p>
 
-      <a routerLink = ''><button mat-raised-button class="homepage-about-button">About Product</button></a>
-      <a routerLink = '/contact-us'><button mat-raised-button class="homepage-contact-button">Contact Us</button></a>
+      <button (click)="aboutProductClicked()" mat-raised-button class="homepage-about-button">About Product</button>
+      <button (click)="contactUsClicked()" mat-raised-button class="homepage-contact-button">Contact Us</button>
 
     </div>
   </div>
