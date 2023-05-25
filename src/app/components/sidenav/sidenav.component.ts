@@ -1,4 +1,3 @@
-import { Route, Router } from '@angular/router'
 import {Component, ElementRef, HostListener} from '@angular/core';
 import {FormBuilder} from "@angular/forms";
 
@@ -14,11 +13,6 @@ export class SidenavComponent {
     top: 0,
   });
 
-  constructor(private _formBuilder: FormBuilder,private elementRef: ElementRef, private router: Router) {}
-  
-
-  contactUSClicked(){
-    this.router.navigate(['/contact-us'])
-  }
+  constructor(private _formBuilder: FormBuilder,private elementRef: ElementRef) {}
 
 }
