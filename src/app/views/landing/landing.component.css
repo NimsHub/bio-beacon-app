@@ -36,7 +36,7 @@ app-login {
 #slogan {
   padding: 100px;
   text-align: center;
-
+  font-family: Roboto, sans-serif;
 }
 
 #slogan p {
@@ -50,7 +50,6 @@ app-login {
 }
 
 #slogan h2, h4 {
-
 }
 
 @media only screen and (max-width: 1200px) {

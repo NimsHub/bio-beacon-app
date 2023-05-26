@@ -20,6 +20,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ContatUsComponent } from './contat-us/contat-us.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import {AppRoutingModule} from "./app-routing.module";
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     MatCheckboxModule,
     MatToolbarModule,
     MatFormFieldModule,
+    AppRoutingModule,
     FontAwesomeModule
   ],
   providers: [],
