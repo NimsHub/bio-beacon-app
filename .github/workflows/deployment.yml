@@ -35,4 +35,7 @@ jobs:
 
       - name: Deploy
         if: success()
-        run: aws s3 sync ./dist/bio-beacon-app s3://bio-beacon-test-bubket
+        run: |
+          aws s3 sync ./dist/bio-beacon-app s3://bio-beacon-test-bubket --delete
+          aws configure set preview.cloudfront true
+          aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_ID }} --paths "/*"
