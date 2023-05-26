@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -20,7 +20,7 @@ h1 {
   width: 50%;
   height: 100%;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: rgb(255, 255, 255);
   background-image: url("../../assets/Left.png");
   text-align: center;
@@ -38,7 +38,11 @@ h1 {
   transform: translateY(-50%);
 }
 
-.homepage-main-paragraph{
+.homepage-text-container h1 {
+  margin: 40px 0;
+}
+
+.homepage-main-paragraph {
   line-height: 2rem;
   text-align: center;
 }
@@ -47,7 +51,7 @@ h1 {
   background-color: #801336 !important;
   color: white !important;
   display: block;
-  margin-top: 10px;
+  margin-top: 40px;
   width: 75%;
   left: 12%;
 }
@@ -95,8 +99,8 @@ h1 {
   position: absolute;
   bottom: -16%;
   left: 30%;
-  animation: main-image-animation 3s forwards 0s;
-
+  animation: main-image-animation 1s forwards 0s;
+  margin: 50px 0;
   text-align: center;
 }
 
@@ -129,10 +133,10 @@ h1 {
 .homepage-main-icon-below-text {
   width: 100%;
   height: 100%;
-  top: 67%;
+  top: 68%;
   /* left: 23%; */
-  /* margin-bottom: 10px; */
-  position:absolute;
+   margin-bottom: 40px;
+  position: absolute;
   color: #ffffff;
   text-align: center;
   -webkit-text-stroke-color: black;
@@ -141,7 +145,7 @@ h1 {
 .homepage-sign-button-box {
   width: 100%;
   height: 100%;
-  top: 72%;
+  top: 73%;
   position: absolute;
   text-align: center !important;
   left: 26%;
@@ -166,7 +170,7 @@ h1 {
   border-radius: 50%;
   font-size: 20px;
   color: #ffffff;
-  margin: 15px;
+  margin: 30px 15px;
 }
 
 .homepage-sign-in-button {
@@ -207,7 +211,7 @@ h1 {
     width: 80%;
   }
 
-  .homepage-main-paragraph{
+  .homepage-main-paragraph {
     line-height: 1.5rem;
   }
 }
@@ -220,7 +224,7 @@ h1 {
 }
 
 @media only screen and (max-width: 530px) {
-  .homepage-main-paragraph{
+  .homepage-main-paragraph {
     line-height: 1.25rem;
   }
 }
