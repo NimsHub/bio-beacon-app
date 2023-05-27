@@ -1,5 +1,5 @@
 <div class="table">
-  <div class="row" style="">
+  <div class="row">
 
     <div class="column">
       <p>Device Id</p>
@@ -23,6 +23,6 @@
     </div>
 
   </div>
-  <app-table-row *ngFor="let session of sessions" [sessionItem]="session"
-                 style="max-width: 1000px;height: 100%"></app-table-row>
+  <app-session-row *ngFor="let session of sessions" [sessionItem]="session" routerLink="/dashboard/sessions/session"
+                 style="max-width: 1000px;height: 100%"></app-session-row>
 </div>
