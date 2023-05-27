@@ -7,22 +7,16 @@ import {LoginComponent} from './components/login/login.component';
 import {MaterialModule} from "./modules/material/material.module";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {RegistrationComponent} from './components/registration/registration.component';
-import {MatTabsModule} from "@angular/material/tabs";
-import {MatButtonToggleModule} from "@angular/material/button-toggle";
 import {LandingComponent} from './views/landing/landing.component';
-import {TableRowComponent} from './components/table-row/table-row.component';
-import {SessionTableComponent} from './components/session-table/session-table.component';
-import { SidenavComponent } from './components/sidenav/sidenav.component';
-import {MatSidenavModule} from "@angular/material/sidenav";
-import {MatCheckboxModule} from "@angular/material/checkbox";
-import {MatToolbarModule} from "@angular/material/toolbar";
-import { HomePageComponent } from './home-page/home-page.component';
-import { ContatUsComponent } from './contat-us/contat-us.component';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import {MatCardModule} from '@angular/material/card';
+import {TableRowComponent} from './components/sessions/table-row/table-row.component';
+import {SessionTableComponent} from './components/sessions/session-table/session-table.component';
+import {SidenavComponent} from './components/sidenav/sidenav.component';
+import {HomePageComponent} from './home-page/home-page.component';
+import {ContatUsComponent} from './contat-us/contat-us.component';
 import {AppRoutingModule} from "./app-routing.module";
-import { AboutUsComponent } from './about-us/about-us.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import {AboutUsComponent} from './about-us/about-us.component';
+import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+import {AthleteTableComponent} from './components/athletes/athlete-table/athlete-table.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +30,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     ContatUsComponent,
     HomePageComponent,
     SidenavComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    AthleteTableComponent,
   ],
   imports: [
     BrowserModule,
@@ -44,16 +39,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     MaterialModule,
     ReactiveFormsModule,
     FormsModule,
-    MatTabsModule,
-    MatButtonToggleModule,
-    MatSidenavModule,
-    MatCheckboxModule,
-    MatToolbarModule,
-    MatFormFieldModule,
     AppRoutingModule,
     FontAwesomeModule,
-    MatToolbarModule,
-    MatCardModule,
     FontAwesomeModule
   ],
   providers: [],

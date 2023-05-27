@@ -7,12 +7,22 @@ import {MatIconModule} from "@angular/material/icon";
 import {MatDatepickerModule} from "@angular/material/datepicker";
 import {MatNativeDateModule} from "@angular/material/core";
 import {MatRadioModule} from "@angular/material/radio";
+import {MatTabsModule} from "@angular/material/tabs";
+import {MatButtonToggleModule} from "@angular/material/button-toggle";
+import {MatSidenavModule} from "@angular/material/sidenav";
+import {MatCheckboxModule} from "@angular/material/checkbox";
+import {MatToolbarModule} from "@angular/material/toolbar";
 
 const matModules = [
   MatFormFieldModule,
   MatInputModule,
   MatCardModule,
   MatIconModule,
+  MatButtonToggleModule,
+  MatSidenavModule,
+  MatCheckboxModule,
+  MatToolbarModule,
+  MatTabsModule,
   MatButtonModule,
   MatDatepickerModule,
   MatNativeDateModule,
