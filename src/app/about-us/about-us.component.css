@@ -1,0 +1,376 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+/*Start-Hero Section*/
+.about-page-hero-section {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../../assets/hero-background-image-1.jpg");
+  /* background-image: url("../../assets/hero-background-image-2.jpg"); */
+  background-size: cover;
+  background-position: center;
+}
+
+.about-page-hero-content-box {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  color: #ffffff;
+  top: 8%;
+  /*transform: translateY(-50%);*/
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.about-page-hero-brief-text-box {
+  width: 30%;
+  position: relative;
+  text-align: center;
+  color: #ffffff;
+  top: 45%;
+  /*transform: translateY(-50%);*/
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+}
+
+.about-page-hero-image {
+  width: 50%;
+  margin-top: 10px;
+}
+
+.about-page-welcome-text-heading {
+  font-size: 5rem;
+}
+
+.about-page-hero-brief-text {
+  line-height: 2rem;
+}
+
+@media only screen and (max-width: 1275px) {
+  .about-page-hero-brief-text-box {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 965px) {
+  .about-page-hero-brief-text-box {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .about-page-hero-brief-text-box {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 715px) {
+  .about-page-hero-brief-text-box {
+    width: 55%;
+  }
+
+  .about-page-hero-brief-text {
+    line-height: 1.5rem;
+  }
+}
+
+/*End-Hero Section*/
+
+/* Start - Product Description Section */
+
+.about-page-product-description-container {
+  width: 100%;
+  display: block;
+  margin: auto;
+  background-color: #000000;
+  color: #fff;
+  overflow: hidden;
+}
+
+.about-page-product-description-content-section {
+  float: left;
+  width: 60%;
+  text-align: center;
+}
+
+.about-page-product-description-content {
+  width: 60%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, +22%);
+}
+
+.about-page-product-description-content p {
+  font-size: 1.5rem;
+  line-height: 2.0rem;
+}
+
+.about-page-product-description-image-section {
+  width: 40%;
+  float: right;
+}
+
+.about-page-product-description-image-section img {
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 1380px) {
+  .about-page-product-description-content {
+    width: 65%;
+    transform: translate(-50%, +10%);
+  }
+
+  .about-page-product-description-content p {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media only screen and (max-width: 1235px) {
+  .about-page-product-description-content {
+    width: 70%;
+    transform: translate(-50%, +15%);
+  }
+}
+
+@media only screen and (max-width: 1180px) {
+  .about-page-product-description-content {
+    width: 75%;
+    transform: translate(-50%, +10%);
+  }
+
+  .about-page-product-description-content p {
+    line-height: 1.65rem;
+  }
+}
+
+@media only screen and (max-width: 1110px) {
+  .about-page-product-description-content {
+    width: 80%;
+    transform: translate(-50%, +15%);
+  }
+
+  .about-page-product-description-content p {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  .about-page-product-description-content {
+    width: 90%;
+    transform: translate(-50%, +5%);
+  }
+
+  .about-page-product-description-content p {
+    font-size: 1.15rem;
+    line-height: 1.45rem;
+  }
+}
+
+@media only screen and (max-width: 795px) {
+  .about-page-product-description-content {
+    width: 95%;
+  }
+
+  .about-page-product-description-content p {
+    line-height: 1.25rem;
+  }
+}
+
+@media only screen and (max-width: 735px) {
+  .about-page-product-description-content p {
+    font-size: 1.0rem;
+    line-height: 1.2rem;
+  }
+}
+/* End - Product Description Section */
+
+/*Start - Device Details Section*/
+
+.about-page-device-section {
+  width: 100%;
+  background-color: #801336;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.about-page-device-card {
+  display: inline-block;
+  margin: 20px;
+}
+
+.about-page-device-card:hover {
+  transform: scale(1.025);
+}
+
+.example-card {
+  max-width: 300px;
+  min-height: 620px;
+}
+
+.about-page-device-description{
+  margin-top: 10px;
+}
+
+/*End - Device Details Section*/
+
+/*Start-Features Section*/
+.about-page-features-section {
+  height: 200px;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.about-page-features-wrapper {
+  box-sizing: content-box;
+  background-color: #ffffff;
+  height: 120px;
+  padding-top: 60px;
+  display: flex;
+  font-size: 60px;
+  font-weight: 500;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  justify-content: center;
+}
+
+.about-page-feature-words-span {
+  display: block;
+  height: 100%;
+  padding-left: 10px;
+  color: #801336;
+  animation: spin_words 6s infinite;
+}
+
+@keyframes spin_words {
+  10% {
+    transform: translateY(-108%);
+  }
+  25% {
+    transform: translateY(-100%);
+  }
+  35% {
+    transform: translateY(-208%);
+  }
+  50% {
+    transform: translateY(-200%);
+  }
+  60% {
+    transform: translateY(-308%);
+  }
+  75% {
+    transform: translateY(-300%);
+  }
+  85% {
+    transform: translateY(-418%);
+  }
+  100% {
+    transform: translateY(-400%);
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .about-page-features-wrapper {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 625px) {
+  .about-page-features-wrapper {
+    font-size: 45px;
+  }
+}
+
+/*End-Features Section*/
+
+/*Start - Footer Section*/
+footer {
+  background-color: #111;
+}
+
+.about-page-footer-section {
+  width: 100%;
+  padding: 70px 30px 20px;
+}
+
+.about-page-social-media {
+  display: flex;
+  justify-content: center;
+}
+
+.about-page-social-media a {
+  text-decoration: none;
+  padding: 12px;
+  background-color: #fff;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.about-page-social-media a fa-icon {
+  font-size: 1.5rem;
+  color: #801336;
+  opacity: 0.9;
+}
+
+.about-page-social-media a:hover {
+  background-color: #111;
+  transition: 0.5s;
+}
+
+.about-page-social-media a:hover fa-icon {
+  background-color: #111;
+  transition: 0.5s;
+}
+
+.about-page-footer-nav {
+  margin: 30px 0;
+}
+
+.about-page-footer-nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+.about-page-footer-nav ul li a{
+  color: #fff;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.about-page-footer-nav ul li a:hover{
+  opacity: 1.0;
+}
+
+.about-page-footer-bottom{
+  background-color: #000000;
+  padding: 20px;
+  text-align: center;
+}
+
+.about-page-footer-bottom p{
+  color: #fff;
+}
+
+.about-page-footer-company{
+  opacity: 0.7;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0 5px;
+}
+/*End - Footer Section*/

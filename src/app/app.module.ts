@@ -7,32 +7,38 @@ import {LoginComponent} from './components/login/login.component';
 import {MaterialModule} from "./modules/material/material.module";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {RegistrationComponent} from './components/registration/registration.component';
-import {MatTabsModule} from "@angular/material/tabs";
-import {MatButtonToggleModule} from "@angular/material/button-toggle";
 import {LandingComponent} from './views/landing/landing.component';
-import {TableRowComponent} from './components/table-row/table-row.component';
-import {SessionTableComponent} from './components/session-table/session-table.component';
-import { SidenavComponent } from './components/sidenav/sidenav.component';
-import {MatSidenavModule} from "@angular/material/sidenav";
-import {MatCheckboxModule} from "@angular/material/checkbox";
-import {MatToolbarModule} from "@angular/material/toolbar";
-import { HomePageComponent } from './home-page/home-page.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { ContatUsComponent } from './contat-us/contat-us.component';
-import { MatFormFieldModule } from '@angular/material/form-field';
+import {SessionTableComponent} from './components/sessions/session-table/session-table.component';
+import {SidenavComponent} from './components/sidenav/sidenav.component';
+import {HomePageComponent} from './home-page/home-page.component';
+import {ContatUsComponent} from './contat-us/contat-us.component';
 import {AppRoutingModule} from "./app-routing.module";
+import {AboutUsComponent} from './about-us/about-us.component';
+import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+import {AthleteTableComponent} from './components/athletes/athlete-table/athlete-table.component';
+import { SessionRowComponent } from './components/sessions/session-row/session-row.component';
+import { ErrorPageComponent } from './components/error-page/error-page.component';
+import { AthleteRowComponent } from './components/athletes/athlete-row/athlete-row.component';
+import {ChartComponent} from "./components/chart/chart.component";
+import {NgChartsModule} from "ng2-charts";
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
+    ChartComponent,
     RegistrationComponent,
     LandingComponent,
-    TableRowComponent,
     SessionTableComponent,
     SidenavComponent,
     ContatUsComponent,
-    HomePageComponent
+    HomePageComponent,
+    SidenavComponent,
+    AboutUsComponent,
+    AthleteTableComponent,
+    SessionRowComponent,
+    ErrorPageComponent,
+    AthleteRowComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,14 +46,10 @@ import {AppRoutingModule} from "./app-routing.module";
     MaterialModule,
     ReactiveFormsModule,
     FormsModule,
-    MatTabsModule,
-    MatButtonToggleModule,
-    MatSidenavModule,
-    MatCheckboxModule,
-    MatToolbarModule,
-    MatFormFieldModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    FontAwesomeModule,
+    NgChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

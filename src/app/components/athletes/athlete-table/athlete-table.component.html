@@ -1,0 +1,19 @@
+<div class="table">
+  <div class="row">
+
+    <div class="column">
+      <p>Name</p>
+    </div>
+
+    <div class="column">
+      <p  style="margin-left: 160px">Mobile</p>
+    </div>
+
+    <div class="column">
+      <p>Address</p>
+    </div>
+
+  </div>
+  <app-athlete-row *ngFor="let athlete of athletes" [athlete]="athlete"
+                   style="max-width: 1000px;height: 100%" routerLink="/dashboard/sessions"></app-athlete-row>
+</div>

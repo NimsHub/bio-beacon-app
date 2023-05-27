@@ -1,4 +1,5 @@
 import {Session} from "./Session";
+import {Athlete} from "./Athlete";
 
 export const SESSIONS: Session[] = [
   {
@@ -166,4 +167,110 @@ export const SESSIONS: Session[] = [
 
 ]
 
+export const ATHLETES: Athlete[] = [
+  {
+    athleteId: "66c81027-2bee-4e0b-8935-3c5f06309b0b",
+    name: "Maximus Decimus Meridius",
+    displayPic: "pic",
+    occupation: "Gladiator",
+    mobile: "111-1111-11111",
+    address: "Colosseum, Rome",
+  },
+  {
+    athleteId: "66c81027-2bee-4e0b-8935-3c5f06309b0b",
+    name: "Maximus Decimus Meridius",
+    displayPic: "pic",
+    occupation: "Gladiator",
+    mobile: "111-1111-11111",
+    address: "Colosseum, Rome",
+  },
+  {
+    athleteId: "66c81027-2bee-4e0b-8935-3c5f06309b0b",
+    name: "Maximus Decimus Meridius",
+    displayPic: "pic",
+    occupation: "Gladiator",
+    mobile: "111-1111-11111",
+    address: "Colosseum, Rome",
+  },
+  {
+    athleteId: "66c81027-2bee-4e0b-8935-3c5f06309b0b",
+    name: "Maximus Decimus Meridius",
+    displayPic: "pic",
+    occupation: "Gladiator",
+    mobile: "111-1111-11111",
+    address: "Colosseum, Rome",
+  },
+  {
+    athleteId: "66c81027-2bee-4e0b-8935-3c5f06309b0b",
+    name: "Maximus Decimus Meridius",
+    displayPic: "pic",
+    occupation: "Gladiator",
+    mobile: "111-1111-11111",
+    address: "Colosseum, Rome",
+  },
+  {
+    athleteId: "66c81027-2bee-4e0b-8935-3c5f06309b0b",
+    name: "Maximus Decimus Meridius",
+    displayPic: "pic",
+    occupation: "Gladiator",
+    mobile: "111-1111-11111",
+    address: "Colosseum, Rome",
+  },
+  {
+    athleteId: "66c81027-2bee-4e0b-8935-3c5f06309b0b",
+    name: "Maximus Decimus Meridius",
+    displayPic: "pic",
+    occupation: "Gladiator",
+    mobile: "111-1111-11111",
+    address: "Colosseum, Rome",
+  },
+  {
+    athleteId: "66c81027-2bee-4e0b-8935-3c5f06309b0b",
+    name: "Maximus Decimus Meridius",
+    displayPic: "pic",
+    occupation: "Gladiator",
+    mobile: "111-1111-11111",
+    address: "Colosseum, Rome",
+  },
+  {
+    athleteId: "66c81027-2bee-4e0b-8935-3c5f06309b0b",
+    name: "Maximus Decimus Meridius",
+    displayPic: "pic",
+    occupation: "Gladiator",
+    mobile: "111-1111-11111",
+    address: "Colosseum, Rome",
+  },
+  {
+    athleteId: "66c81027-2bee-4e0b-8935-3c5f06309b0b",
+    name: "Maximus Decimus Meridius",
+    displayPic: "pic",
+    occupation: "Gladiator",
+    mobile: "111-1111-11111",
+    address: "Colosseum, Rome",
+  },
+  {
+    athleteId: "66c81027-2bee-4e0b-8935-3c5f06309b0b",
+    name: "Maximus Decimus Meridius",
+    displayPic: "pic",
+    occupation: "Gladiator",
+    mobile: "111-1111-11111",
+    address: "Colosseum, Rome",
+  },
+  {
+    athleteId: "66c81027-2bee-4e0b-8935-3c5f06309b0b",
+    name: "Maximus Decimus Meridius",
+    displayPic: "pic",
+    occupation: "Gladiator",
+    mobile: "111-1111-11111",
+    address: "Colosseum, Rome",
+  },
+  {
+    athleteId: "66c81027-2bee-4e0b-8935-3c5f06309b0b",
+    name: "Maximus Decimus Meridius",
+    displayPic: "pic",
+    occupation: "Gladiator",
+    mobile: "111-1111-11111",
+    address: "Colosseum, Rome",
+  },
+]
 
