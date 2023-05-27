@@ -17,10 +17,12 @@ import {MatSidenavModule} from "@angular/material/sidenav";
 import {MatCheckboxModule} from "@angular/material/checkbox";
 import {MatToolbarModule} from "@angular/material/toolbar";
 import { HomePageComponent } from './home-page/home-page.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ContatUsComponent } from './contat-us/contat-us.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import {MatCardModule} from '@angular/material/card';
 import {AppRoutingModule} from "./app-routing.module";
+import { AboutUsComponent } from './about-us/about-us.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import {AppRoutingModule} from "./app-routing.module";
     SessionTableComponent,
     SidenavComponent,
     ContatUsComponent,
-    HomePageComponent
+    HomePageComponent,
+    SidenavComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,
@@ -47,6 +51,9 @@ import {AppRoutingModule} from "./app-routing.module";
     MatToolbarModule,
     MatFormFieldModule,
     AppRoutingModule,
+    FontAwesomeModule,
+    MatToolbarModule,
+    MatCardModule,
     FontAwesomeModule
   ],
   providers: [],
