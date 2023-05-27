@@ -8,7 +8,6 @@ import {MaterialModule} from "./modules/material/material.module";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {RegistrationComponent} from './components/registration/registration.component';
 import {LandingComponent} from './views/landing/landing.component';
-import {TableRowComponent} from './components/sessions/table-row/table-row.component';
 import {SessionTableComponent} from './components/sessions/session-table/session-table.component';
 import {SidenavComponent} from './components/sidenav/sidenav.component';
 import {HomePageComponent} from './home-page/home-page.component';
@@ -17,14 +16,19 @@ import {AppRoutingModule} from "./app-routing.module";
 import {AboutUsComponent} from './about-us/about-us.component';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {AthleteTableComponent} from './components/athletes/athlete-table/athlete-table.component';
+import { SessionRowComponent } from './components/sessions/session-row/session-row.component';
+import { ErrorPageComponent } from './components/error-page/error-page.component';
+import { AthleteRowComponent } from './components/athletes/athlete-row/athlete-row.component';
+import {ChartComponent} from "./components/chart/chart.component";
+import {NgChartsModule} from "ng2-charts";
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
+    ChartComponent,
     RegistrationComponent,
     LandingComponent,
-    TableRowComponent,
     SessionTableComponent,
     SidenavComponent,
     ContatUsComponent,
@@ -32,6 +36,9 @@ import {AthleteTableComponent} from './components/athletes/athlete-table/athlete
     SidenavComponent,
     AboutUsComponent,
     AthleteTableComponent,
+    SessionRowComponent,
+    ErrorPageComponent,
+    AthleteRowComponent,
   ],
   imports: [
     BrowserModule,
@@ -41,7 +48,8 @@ import {AthleteTableComponent} from './components/athletes/athlete-table/athlete
     FormsModule,
     AppRoutingModule,
     FontAwesomeModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    NgChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
