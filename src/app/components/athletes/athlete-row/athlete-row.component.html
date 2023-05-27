@@ -1,0 +1,19 @@
+<button *ngIf="athlete" class="column-btn">
+  <div class="row">
+    <div class="column">
+      <img src="assets/maximus.jpg" alt="display-pic" style="width: 60px;height: 60px;border-radius: 50%">
+      <div style="display: flex;flex-direction: column;align-items: flex-start;margin: 0 20px;justify-content: center">
+      <p>{{athlete.name}}</p>
+      <p style="color: #868686">{{athlete.occupation}}</p>
+      </div>
+    </div>
+    <div class="column">
+      <p>{{athlete.mobile}}</p>
+    </div>
+    <div class="column">
+      <p>{{athlete.address}}</p>
+    </div>
+
+  </div>
+</button>
+
