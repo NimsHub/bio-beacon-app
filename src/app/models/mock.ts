@@ -1,5 +1,6 @@
 import {Session} from "./Session";
-import {Athlete} from "./Athlete";
+import {AthleteDetails} from "./AthleteDetails";
+import {Device} from "./Device"
 
 export const SESSIONS: Session[] = [
   {
@@ -167,110 +168,222 @@ export const SESSIONS: Session[] = [
 
 ]
 
-export const ATHLETES: Athlete[] = [
+export const ATHLETES: AthleteDetails[] = [
   {
     athleteId: "66c81027-2bee-4e0b-8935-3c5f06309b0b",
-    name: "Maximus Decimus Meridius",
-    displayPic: "pic",
+    coachId:"4e043076-f02a-4c99-bb2f-5b538a3acb3a",
+    firstname: "Maximus Decimus",
+    lastname: "Meridius",
+    email: "athlete@gmail.com",
+    dateOfBirth: "2023-03-01",
+    height: 1.5,
+    weight: 52.3,
+    gender: "MALE",
     occupation: "Gladiator",
     mobile: "111-1111-11111",
     address: "Colosseum, Rome",
   },
   {
     athleteId: "66c81027-2bee-4e0b-8935-3c5f06309b0b",
-    name: "Maximus Decimus Meridius",
-    displayPic: "pic",
+    coachId:"4e043076-f02a-4c99-bb2f-5b538a3acb3a",
+    firstname: "Maximus Decimus",
+    lastname: "Meridius",
+    email: "athlete@gmail.com",
+    dateOfBirth: "2023-03-01",
+    height: 1.5,
+    weight: 52.3,
+    gender: "MALE",
     occupation: "Gladiator",
     mobile: "111-1111-11111",
     address: "Colosseum, Rome",
   },
   {
     athleteId: "66c81027-2bee-4e0b-8935-3c5f06309b0b",
-    name: "Maximus Decimus Meridius",
-    displayPic: "pic",
+    coachId:"4e043076-f02a-4c99-bb2f-5b538a3acb3a",
+    firstname: "Maximus Decimus",
+    lastname: "Meridius",
+    email: "athlete@gmail.com",
+    dateOfBirth: "2023-03-01",
+    height: 1.5,
+    weight: 52.3,
+    gender: "MALE",
     occupation: "Gladiator",
     mobile: "111-1111-11111",
     address: "Colosseum, Rome",
   },
   {
     athleteId: "66c81027-2bee-4e0b-8935-3c5f06309b0b",
-    name: "Maximus Decimus Meridius",
-    displayPic: "pic",
+    coachId:"4e043076-f02a-4c99-bb2f-5b538a3acb3a",
+    firstname: "Maximus Decimus",
+    lastname: "Meridius",
+    email: "athlete@gmail.com",
+    dateOfBirth: "2023-03-01",
+    height: 1.5,
+    weight: 52.3,
+    gender: "MALE",
     occupation: "Gladiator",
     mobile: "111-1111-11111",
     address: "Colosseum, Rome",
   },
   {
     athleteId: "66c81027-2bee-4e0b-8935-3c5f06309b0b",
-    name: "Maximus Decimus Meridius",
-    displayPic: "pic",
+    coachId:"4e043076-f02a-4c99-bb2f-5b538a3acb3a",
+    firstname: "Maximus Decimus",
+    lastname: "Meridius",
+    email: "athlete@gmail.com",
+    dateOfBirth: "2023-03-01",
+    height: 1.5,
+    weight: 52.3,
+    gender: "MALE",
     occupation: "Gladiator",
     mobile: "111-1111-11111",
     address: "Colosseum, Rome",
   },
   {
     athleteId: "66c81027-2bee-4e0b-8935-3c5f06309b0b",
-    name: "Maximus Decimus Meridius",
-    displayPic: "pic",
+    coachId:"4e043076-f02a-4c99-bb2f-5b538a3acb3a",
+    firstname: "Maximus Decimus",
+    lastname: "Meridius",
+    email: "athlete@gmail.com",
+    dateOfBirth: "2023-03-01",
+    height: 1.5,
+    weight: 52.3,
+    gender: "MALE",
     occupation: "Gladiator",
     mobile: "111-1111-11111",
     address: "Colosseum, Rome",
   },
   {
     athleteId: "66c81027-2bee-4e0b-8935-3c5f06309b0b",
-    name: "Maximus Decimus Meridius",
-    displayPic: "pic",
+    coachId:"4e043076-f02a-4c99-bb2f-5b538a3acb3a",
+    firstname: "Maximus Decimus",
+    lastname: "Meridius",
+    email: "athlete@gmail.com",
+    dateOfBirth: "2023-03-01",
+    height: 1.5,
+    weight: 52.3,
+    gender: "MALE",
     occupation: "Gladiator",
     mobile: "111-1111-11111",
     address: "Colosseum, Rome",
   },
   {
     athleteId: "66c81027-2bee-4e0b-8935-3c5f06309b0b",
-    name: "Maximus Decimus Meridius",
-    displayPic: "pic",
+    coachId:"4e043076-f02a-4c99-bb2f-5b538a3acb3a",
+    firstname: "Maximus Decimus",
+    lastname: "Meridius",
+    email: "athlete@gmail.com",
+    dateOfBirth: "2023-03-01",
+    height: 1.5,
+    weight: 52.3,
+    gender: "MALE",
     occupation: "Gladiator",
     mobile: "111-1111-11111",
     address: "Colosseum, Rome",
   },
   {
     athleteId: "66c81027-2bee-4e0b-8935-3c5f06309b0b",
-    name: "Maximus Decimus Meridius",
-    displayPic: "pic",
+    coachId:"4e043076-f02a-4c99-bb2f-5b538a3acb3a",
+    firstname: "Maximus Decimus",
+    lastname: "Meridius",
+    email: "athlete@gmail.com",
+    dateOfBirth: "2023-03-01",
+    height: 1.5,
+    weight: 52.3,
+    gender: "MALE",
     occupation: "Gladiator",
     mobile: "111-1111-11111",
     address: "Colosseum, Rome",
   },
   {
     athleteId: "66c81027-2bee-4e0b-8935-3c5f06309b0b",
-    name: "Maximus Decimus Meridius",
-    displayPic: "pic",
+    coachId:"4e043076-f02a-4c99-bb2f-5b538a3acb3a",
+    firstname: "Maximus Decimus",
+    lastname: "Meridius",
+    email: "athlete@gmail.com",
+    dateOfBirth: "2023-03-01",
+    height: 1.5,
+    weight: 52.3,
+    gender: "MALE",
     occupation: "Gladiator",
     mobile: "111-1111-11111",
     address: "Colosseum, Rome",
   },
   {
     athleteId: "66c81027-2bee-4e0b-8935-3c5f06309b0b",
-    name: "Maximus Decimus Meridius",
-    displayPic: "pic",
+    coachId:"4e043076-f02a-4c99-bb2f-5b538a3acb3a",
+    firstname: "Maximus Decimus",
+    lastname: "Meridius",
+    email: "athlete@gmail.com",
+    dateOfBirth: "2023-03-01",
+    height: 1.5,
+    weight: 52.3,
+    gender: "MALE",
     occupation: "Gladiator",
     mobile: "111-1111-11111",
     address: "Colosseum, Rome",
   },
   {
     athleteId: "66c81027-2bee-4e0b-8935-3c5f06309b0b",
-    name: "Maximus Decimus Meridius",
-    displayPic: "pic",
+    coachId:"4e043076-f02a-4c99-bb2f-5b538a3acb3a",
+    firstname: "Maximus Decimus",
+    lastname: "Meridius",
+    email: "athlete@gmail.com",
+    dateOfBirth: "2023-03-01",
+    height: 1.5,
+    weight: 52.3,
+    gender: "MALE",
     occupation: "Gladiator",
     mobile: "111-1111-11111",
     address: "Colosseum, Rome",
   },
-  {
-    athleteId: "66c81027-2bee-4e0b-8935-3c5f06309b0b",
-    name: "Maximus Decimus Meridius",
-    displayPic: "pic",
-    occupation: "Gladiator",
-    mobile: "111-1111-11111",
-    address: "Colosseum, Rome",
-  },
+
 ]
 
+export const DEVICES: Device[] = [
+  {
+    id:"1",
+    apiKey:"117ff502-b294-4fcb-92f5-1bb61068856a"
+  },
+  {
+    id:"1",
+    apiKey:"117ff502-b294-4fcb-92f5-1bb61068856a"
+  },  {
+    id:"1",
+    apiKey:"117ff502-b294-4fcb-92f5-1bb61068856a"
+  },
+  {
+    id:"1",
+    apiKey:"117ff502-b294-4fcb-92f5-1bb61068856a"
+  },
+  {
+    id:"1",
+    apiKey:"117ff502-b294-4fcb-92f5-1bb61068856a"
+  },
+  {
+    id:"1",
+    apiKey:"117ff502-b294-4fcb-92f5-1bb61068856a"
+  },
+  {
+    id:"1",
+    apiKey:"117ff502-b294-4fcb-92f5-1bb61068856a"
+  },
+  {
+    id:"1",
+    apiKey:"117ff502-b294-4fcb-92f5-1bb61068856a"
+  },
+  {
+    id:"1",
+    apiKey:"117ff502-b294-4fcb-92f5-1bb61068856a"
+  },
+  {
+    id:"1",
+    apiKey:"117ff502-b294-4fcb-92f5-1bb61068856a"
+  },
+  {
+    id:"1",
+    apiKey:"117ff502-b294-4fcb-92f5-1bb61068856a"
+  },
+
+
+]

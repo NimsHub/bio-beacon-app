@@ -1,6 +1,6 @@
 import {Component, Input, OnChanges} from '@angular/core';
-import {Session} from "../../../models/Session";
 import {Athlete} from "../../../models/Athlete";
+import {DataService} from "../../../services/data.service";
 
 @Component({
   selector: 'app-athlete-row',
@@ -9,8 +9,12 @@ import {Athlete} from "../../../models/Athlete";
 })
 export class AthleteRowComponent implements OnChanges{
   @Input() athlete?: Athlete;
-
+  constructor(private dataService:DataService) {
+  }
   ngOnChanges(): void {
   }
 
+  Onclick() {
+    this.dataService.setAthlete(this.athlete)
+  }
 }

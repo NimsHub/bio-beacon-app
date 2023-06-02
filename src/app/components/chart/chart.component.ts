@@ -1,5 +1,5 @@
-import {Component, ViewChild, Input, OnInit} from '@angular/core';
-import {Chart, ChartConfiguration, ChartEvent, ChartType} from 'chart.js';
+import {Component, ViewChild, Input } from '@angular/core';
+import { ChartConfiguration, ChartType} from 'chart.js';
 import {BaseChartDirective} from 'ng2-charts';
 
 @Component({
@@ -91,7 +91,7 @@ export class ChartComponent {
     }
   };
 
-  public lineChartType: ChartType = 'line';
+  public lineChartType: ChartType = "line";
 
   @ViewChild(BaseChartDirective) chart?: BaseChartDirective;
 

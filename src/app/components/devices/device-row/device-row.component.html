@@ -1,0 +1,17 @@
+<button class="column-btn" >
+
+<div class="row">
+
+  <div class="column">
+    <p>{{device?.id}}</p>
+
+  </div>
+
+  <div class="column">
+    <p>{{device?.apiKey}}</p>
+  </div>
+<div class="column">
+  <ngx-qrcode (click)="downloadQRCode()" [value]="data" cssClass="qr-code"></ngx-qrcode>
+</div>
+</div>
+</button>

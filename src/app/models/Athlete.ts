@@ -1,8 +1,8 @@
-export interface Athlete {
+export interface Athlete{
   athleteId: string;
-  name: string;
-  displayPic: string;
+  firstname: string;
+  lastname: string;
+  email: string;
+  gender: string;
   occupation: string;
-  mobile: string;
-  address: string;
 }

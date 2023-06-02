@@ -1,0 +1,27 @@
+<div class="info">
+  <button style="margin: 0" matSuffix mat-flat-button ><mat-icon>apps</mat-icon>
+    Dashboard</button>
+
+</div>
+<button (click)="createNewDevice()" mat-flat-button color="accent" matSuffix style="margin-bottom: 10px"
+        [routerLink]="[{ outlets: { secondary: ['devices'] } }]">New Device<mat-icon>add</mat-icon></button>
+<div>
+
+<div class="header-row">
+
+  <div class="column">
+    <p>Device Id</p>
+
+  </div>
+
+  <div class="column">
+    <p>API Key</p>
+  </div>
+
+  <div class="column">
+    <p>QR Code</p>
+  </div>
+</div>
+<app-device-row *ngFor="let device of devices" [device]="device"></app-device-row>
+</div>
+
