@@ -10,26 +10,20 @@ import {AboutUsComponent} from "./about-us/about-us.component";
 import {AthleteTableComponent} from "./components/athletes/athlete-table/athlete-table.component";
 import {ErrorPageComponent} from "./components/error-page/error-page.component";
 import {ChartComponent} from "./components/chart/chart.component";
+import {DevicesComponent} from "./components/devices/devices.component";
+import {AuthGuard} from "./guards/auth.guard";
 
 const appRoutes: Routes = [
   {path: 'sign-in', component: LandingComponent},
   {path: 'contact', component: ContatUsComponent},
   {path: 'about', component: AboutUsComponent},
   {
-    path: 'dashboard', component: SidenavComponent,
+    path: 'dashboard', component: SidenavComponent,canActivate:[AuthGuard],
     children: [
-      {
-        path: 'sessions/session',
-        component: ChartComponent
-      },
-      {
-        path: 'sessions',
-        component: SessionTableComponent,
-      },
-      {
-        path: 'athletes',
-        component: AthleteTableComponent
-      }
+      { path: 'sessions/session', component: ChartComponent },
+      { path: 'sessions', component: SessionTableComponent },
+      { path: 'athletes', component: AthleteTableComponent },
+      { path: 'devices', component: DevicesComponent },
       ]
   },
   {path: '', component: HomePageComponent},
