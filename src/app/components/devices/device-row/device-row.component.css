@@ -1,0 +1,29 @@
+.row {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 65px;
+  padding: 0 0 0 50px;
+  box-shadow: 0 0 8px #e3e3e3;
+  border-radius: 8px;
+}
+.column-btn {
+  padding: 0;
+  background: white;
+  border: none;
+  margin: 5px 0;
+  width: 100%;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.column-btn :hover {
+  background: rgba(241, 241, 241, 0.61);
+  transition: 0.1s;
+  transform: scale(1.02);
+}
+.column-btn :active {
+  background: rgba(255, 255, 255, 0.61);
+  transform: scale(1);
+}
