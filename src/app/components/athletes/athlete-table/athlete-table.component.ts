@@ -13,8 +13,18 @@ export class AthleteTableComponent implements OnInit {
   constructor(private athleteService: AthleteService) {
   }
 
+  getAthletesByCoach() {
+    this.athleteService.getAthletesByCoach().subscribe(
+      {
+        next: (value) => this.athletes = value,
+        error: (error) => console.log(error),
+        complete: () => console.log("athletes retrieved")
+      }
+    );
+  }
+
   ngOnInit(): void {
-    this.athletes = this.athleteService.getSessions()
+    this.getAthletesByCoach()
   }
 
 }
