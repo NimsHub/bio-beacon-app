@@ -3,7 +3,7 @@
     Dashboard</button>
 
 </div>
-<button mat-flat-button color="accent" matSuffix style="margin-bottom: 10px"
+<button (click)="createNewDevice()" mat-flat-button color="accent" matSuffix style="margin-bottom: 10px"
         [routerLink]="[{ outlets: { secondary: ['devices'] } }]">New Device<mat-icon>add</mat-icon></button>
 <div>
 

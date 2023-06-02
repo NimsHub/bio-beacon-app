@@ -18,4 +18,8 @@ export class DeviceService {
   getDevices(): Observable<Device[]> {
     return this.http.get<Device[]>(environment.baseURL + '/api/v1/devices')
   }
+
+  createDevice(){
+    return this.http.post(environment.baseURL + '/api/v1/devices',null)
+  }
 }

@@ -1,4 +1,4 @@
-<button class="column-btn" (click)="downloadQRCode()">
+<button class="column-btn" >
 
 <div class="row">
 
@@ -11,7 +11,7 @@
     <p>{{device?.apiKey}}</p>
   </div>
 <div class="column">
-  <ngx-qrcode [value]="data" cssClass="qr-code"></ngx-qrcode>
+  <ngx-qrcode (click)="downloadQRCode()" [value]="data" cssClass="qr-code"></ngx-qrcode>
 </div>
 </div>
 </button>
