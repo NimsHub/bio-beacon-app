@@ -1,5 +1,6 @@
 import {Component, Input, OnChanges} from '@angular/core';
 import {Session} from "../../../models/Session";
+import {Observable} from "rxjs";
 
 @Component({
   selector: 'app-session-row',
@@ -19,8 +20,8 @@ export class SessionRowComponent implements OnChanges{
     if (this.sessionItem) {
       this.startDate = this.getDate(this.sessionItem.startDateTime)
       this.startTime = this.getTime(this.sessionItem.startDateTime)
-      this.endDate = this.getDate(this.sessionItem.startDateTime)
-      this.endTime = this.getTime(this.sessionItem.startDateTime)
+      this.endDate = this.getDate(this.sessionItem.endDateTime)
+      this.endTime = this.getTime(this.sessionItem.endDateTime)
 
       this.duration = this.getTimeDuration(this.sessionItem.sessionDuration)
     }
@@ -35,8 +36,7 @@ export class SessionRowComponent implements OnChanges{
   }
 
   getTimeDuration(value: number): string {
-    const totalSeconds = Math.floor(value / 1000);
-    const minutes = Math.floor(totalSeconds / 60);
+    const minutes = Math.floor(value / 60);
     const hours = Math.floor(minutes / 60);
 
     if (hours > 0) {

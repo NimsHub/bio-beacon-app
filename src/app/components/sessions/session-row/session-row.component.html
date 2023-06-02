@@ -21,8 +21,8 @@
     </div>
 
     <div class="column">
-      <mat-icon [ngClass]="{'completed':sessionItem.isFed,'pending':!sessionItem.isFed}">
-        {{sessionItem.isFed ? "done_all" : "blur_circular"}}
+      <mat-icon [ngClass]="{'completed':sessionItem.complete,'pending':!sessionItem.complete}">
+        {{sessionItem.complete ? "done_all" : "blur_circular"}}
       </mat-icon>
     </div>
 
