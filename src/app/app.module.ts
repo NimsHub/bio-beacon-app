@@ -21,6 +21,11 @@ import { ErrorPageComponent } from './components/error-page/error-page.component
 import { AthleteRowComponent } from './components/athletes/athlete-row/athlete-row.component';
 import {ChartComponent} from "./components/chart/chart.component";
 import {NgChartsModule} from "ng2-charts";
+import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
+import { DevicesComponent } from './components/devices/devices.component';
+import {TokenInterceptor} from "./services/token.interceptor";
+import { DeviceRowComponent } from './components/devices/device-row/device-row.component';
+import {NgxQRCodeModule} from "ngx-qrcode2";
 
 @NgModule({
   declarations: [
@@ -39,8 +44,11 @@ import {NgChartsModule} from "ng2-charts";
     SessionRowComponent,
     ErrorPageComponent,
     AthleteRowComponent,
+    DevicesComponent,
+    DeviceRowComponent,
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
@@ -49,9 +57,11 @@ import {NgChartsModule} from "ng2-charts";
     AppRoutingModule,
     FontAwesomeModule,
     FontAwesomeModule,
-    NgChartsModule
+    NgChartsModule,
+    NgxQRCodeModule
   ],
-  providers: [],
+  providers: [  {provide:HTTP_INTERCEPTORS,useClass:TokenInterceptor,multi:true}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {
