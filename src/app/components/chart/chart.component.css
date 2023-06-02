@@ -1,5 +1,31 @@
 #canvas {
-  width: 600px;
-  /*height: 500px;*/
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 80px;
+  justify-items: center;
   margin: 40px;
+}
+canvas{
+  max-height: 400px;
+  max-width: 600px;
+}
+
+@media (max-width: 1520px) {
+  #canvas {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 1700px) {
+  canvas {
+    max-height: 300px;
+    max-width: 500px;
+  }
+}
+.info {
+  margin: 0 0 20px 0;
+  background: #f6f6f6;
+  height: 300px;
+  box-shadow: 1px 1px 12px #d3d2d2;
+  border-radius: 8px;
+  padding: 10px;
 }

@@ -1,8 +1,22 @@
-<div id="canvas">
+<div class="info">
+  <button style="margin: 0" matSuffix mat-flat-button ><mat-icon>apps</mat-icon>
+    Dashboard</button>
 
-<canvas baseChart class="chart"
+</div>
+<div id="canvas">
+<canvas chart baseChart class="chart"
         [data]="lineChartData"
         [options]="lineChartOptions"
         [type]="lineChartType"
         ></canvas>
+  <canvas baseChart class="chart"
+          [data]="lineChartData"
+          [options]="lineChartOptions"
+          [type]="lineChartType"
+  ></canvas>
+  <canvas baseChart class="chart"
+          [data]="lineChartData"
+          [options]="lineChartOptions"
+          [type]="lineChartType"
+  ></canvas>
 </div>
