@@ -10,7 +10,7 @@
 .about-page-hero-section {
   height: 100vh;
   width: 100%;
-  /*background-image: url("../../assets/hero-background-image-1.jpg");*/
+  background-image: url("../../assets/about_us_background.jpg");
   background-size: cover;
   background-position: center;
 }
