@@ -22,7 +22,10 @@ export class AuthService {
       })
     );
   }
-
+logout(){
+    localStorage.removeItem('authToken')
+  this.router.navigate(['/sign-in'])
+}
   getUserRole(){
    let token= localStorage.getItem('authToken')
     if (token) {
