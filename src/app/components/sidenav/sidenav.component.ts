@@ -1,8 +1,10 @@
 import {Component, OnInit} from '@angular/core';
 import {AuthService} from "../../services/auth.service";
 import {AthleteService} from "../../services/athlete.service";
-import {AthleteDetails} from "../../models/AthleteDetails";
 import {DataService} from "../../services/data.service";
+import {CoachService} from "../../services/coach.service";
+import {CoachDetails} from "../../models/CoachDetails";
+import {AthleteDetails} from "../../models/AthleteDetails";
 
 @Component({
   selector: 'app-sidenav',
@@ -11,18 +13,41 @@ import {DataService} from "../../services/data.service";
 })
 export class SidenavComponent implements OnInit {
   userRole: string | undefined;
+  athlete: AthleteDetails | undefined;
+  coach: CoachDetails | undefined;
 
-  constructor(private authService: AuthService, private athleteService: AthleteService,private dataService: DataService) {
+  constructor(
+    private authService: AuthService,
+    private athleteService: AthleteService,
+    private coachService: CoachService,
+    private dataService: DataService
+  ) {
     this.userRole = authService.getUserRole()
   }
-logout(){
+
+  logout() {
     this.authService.logout()
-}
+  }
+
   setUserDetails() {
     if (this.userRole == 'ATHLETE') {
       this.athleteService.getAthleteDetails().subscribe(
         {
-          next: (value) => this.dataService.setAthleteDetails(value),
+          next: (value) => {
+            this.athlete = value
+            this.dataService.setAthleteDetails(value)
+          },
+          error: (error) => console.log(error),
+          complete: () => console.log(this.dataService.getAthleteDetails())
+        }
+      );
+    } else if (this.userRole === 'COACH') {
+      this.coachService.getCoachDetails().subscribe(
+        {
+          next: (value) => {
+            this.coach = value
+            this.dataService.setCoachDetails(value)
+          },
           error: (error) => console.log(error),
           complete: () => console.log(this.dataService.getAthleteDetails())
         }
