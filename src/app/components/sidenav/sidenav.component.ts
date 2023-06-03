@@ -15,7 +15,9 @@ export class SidenavComponent implements OnInit {
   constructor(private authService: AuthService, private athleteService: AthleteService,private dataService: DataService) {
     this.userRole = authService.getUserRole()
   }
-
+logout(){
+    this.authService.logout()
+}
   setUserDetails() {
     if (this.userRole == 'ATHLETE') {
       this.athleteService.getAthleteDetails().subscribe(

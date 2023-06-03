@@ -1,6 +1,6 @@
   <mat-sidenav-container class="container">
     <mat-sidenav #sidenav  mode="side" opened class="sidenav">
-      <div style="display: flex;flex-direction: column;height: 100%;">
+      <div style="display: flex;flex-direction: column;height: 90%">
         <div style="display: flex ;justify-content: center;">
           <img src="assets/bio-beacon-logo-long.png" alt="logo" height="80px">
 
@@ -31,9 +31,15 @@
             <mat-icon>mail_outline</mat-icon>
             Contact us
           </button>
-
         </div>
+        <div style="height:inherit"></div>
+<div style="width: 100%;display: flex;justify-content: center">
 
+          <button matSuffix mat-flat-button routerLink="/contact" (click)="logout()">
+            <mat-icon>exit_to_app</mat-icon>
+            Log out
+          </button>
+</div>
       </div>
     </mat-sidenav>
 
