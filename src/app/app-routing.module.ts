@@ -13,6 +13,7 @@ import { ChartComponent } from './components/chart/chart.component';
 import { DevicesComponent } from './components/devices/devices.component';
 import { AuthGuard } from './guards/auth.guard';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
+import { CoachesTableComponent } from './components/admin-coaches/coaches-table/coaches-table.component';
 
 const appRoutes: Routes = [
   { path: 'sign-in', component: LandingComponent },
@@ -23,7 +24,7 @@ const appRoutes: Routes = [
     component: AdminDashboardComponent,
     children:
     [
-      //Need to create new children paths
+      {path: 'coaches', component:CoachesTableComponent},
     ],
   },
   {

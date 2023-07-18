@@ -1,0 +1,31 @@
+<div class="info">
+  <button style="margin: 0" matSuffix mat-flat-button>
+    <mat-icon>apps</mat-icon> Dashboard
+  </button>
+  <h2>New Coaches</h2>
+</div>
+<div class="table">
+  <div class="row">
+    <div class="column">
+      <p>Name</p>
+    </div>
+
+    <div class="column">
+      <p style="margin-left: 160px">Email</p>
+    </div>
+
+    <div class="column">
+      <p>Gender</p>
+    </div>
+
+    <div class="column">
+        <p>Action</p>
+      </div>
+  </div>
+  <app-coaches-rows
+    *ngFor="let coach of coaches"
+    [coach]="coach"
+    style="max-width: 1000px; height: 100%"
+    routerLink="/admin-dashboard/coaches"
+  ></app-coaches-rows>
+</div>

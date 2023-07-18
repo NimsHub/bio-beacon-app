@@ -28,6 +28,8 @@ import { DeviceRowComponent } from './components/devices/device-row/device-row.c
 import {NgxQRCodeModule} from "ngx-qrcode2";
 import {AdminSidenavComponent} from './components/admin-sidenav/admin-sidenav.component';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
+import { CoachesTableComponent } from './components/admin-coaches/coaches-table/coaches-table.component';
+import { CoachesRowsComponent } from './components/admin-coaches/coaches-rows/coaches-rows.component';
 
 
 @NgModule({
@@ -51,6 +53,8 @@ import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.compo
     DeviceRowComponent,
     AdminSidenavComponent,
     AdminDashboardComponent,
+    CoachesTableComponent,
+    CoachesRowsComponent,
   ],
   imports: [
     HttpClientModule,
