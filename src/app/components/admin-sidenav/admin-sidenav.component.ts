@@ -1,10 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {AuthService} from "../../services/auth.service";
-import {AthleteService} from "../../services/athlete.service";
+//import {AthleteService} from "../../services/admin.service";
 import {DataService} from "../../services/data.service";
-import {CoachService} from "../../services/coach.service";
-import {CoachDetails} from "../../models/CoachDetails";
-import {AthleteDetails} from "../../models/AthleteDetails";
+//import {AdminDetails} from "../../models/AdminDetails";
 
 @Component({
   selector: 'app-admin-sidenav',
@@ -13,13 +11,11 @@ import {AthleteDetails} from "../../models/AthleteDetails";
 })
 export class AdminSidenavComponent implements OnInit {
   userRole: string | undefined;
-  athlete: AthleteDetails | undefined;
-  coach: CoachDetails | undefined;
+  //athlete: AthleteDetails | undefined;
 
   constructor(
     private authService: AuthService,
-    private athleteService: AthleteService,
-    private coachService: CoachService,
+    //private adminService: AdminService,
     private dataService: DataService
   ) {
     this.userRole = authService.getUserRole()
@@ -29,34 +25,23 @@ export class AdminSidenavComponent implements OnInit {
     this.authService.logout()
   }
 
-  setUserDetails() {
-    if (this.userRole == 'ATHLETE') {
-      this.athleteService.getAthleteDetails().subscribe(
-        {
-          next: (value) => {
-            this.athlete = value
-            this.dataService.setAthleteDetails(value)
-          },
-          error: (error) => console.log(error),
-          complete: () => console.log(this.dataService.getAthleteDetails())
-        }
-      );
-    } else if (this.userRole === 'COACH') {
-      this.coachService.getCoachDetails().subscribe(
-        {
-          next: (value) => {
-            this.coach = value
-            this.dataService.setCoachDetails(value)
-          },
-          error: (error) => console.log(error),
-          complete: () => console.log(this.dataService.getAthleteDetails())
-        }
-      );
-    }
-  }
+  // setUserDetails() {
+  //   if (this.userRole == 'ADMIN') {
+  //     this.adminService.getAdminDetails().subscribe(
+  //       {
+  //         next: (value) => {
+  //           this.admin = value
+  //           this.dataService.setAdminDetails(value)
+  //         },
+  //         error: (error) => console.log(error),
+  //         complete: () => console.log(this.dataService.getAdminDetails())
+  //       }
+  //     );
+  //   } 
+  // }
 
   ngOnInit(): void {
-    this.setUserDetails();
+    //this.setUserDetails();
   }
 }
 
