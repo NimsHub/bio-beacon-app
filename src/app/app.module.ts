@@ -26,8 +26,9 @@ import { DevicesComponent } from './components/devices/devices.component';
 import {TokenInterceptor} from "./services/token.interceptor";
 import { DeviceRowComponent } from './components/devices/device-row/device-row.component';
 import {NgxQRCodeModule} from "ngx-qrcode2";
-import { CoachDashboardComponent } from './coach-dashboard/coach-dashboard.component';
-import { CoachSideNavComponent } from './components/coach-side-nav/coach-side-nav.component';
+import {AdminSidenavComponent} from './components/admin-sidenav/admin-sidenav.component';
+import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
+
 
 @NgModule({
   declarations: [
@@ -48,8 +49,8 @@ import { CoachSideNavComponent } from './components/coach-side-nav/coach-side-na
     AthleteRowComponent,
     DevicesComponent,
     DeviceRowComponent,
-    CoachDashboardComponent,
-    CoachSideNavComponent,
+    AdminSidenavComponent,
+    AdminDashboardComponent,
   ],
   imports: [
     HttpClientModule,

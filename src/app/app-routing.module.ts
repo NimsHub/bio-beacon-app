@@ -12,13 +12,13 @@ import {ErrorPageComponent} from "./components/error-page/error-page.component";
 import {ChartComponent} from "./components/chart/chart.component";
 import {DevicesComponent} from "./components/devices/devices.component";
 import {AuthGuard} from "./guards/auth.guard";
-import { CoachDashboardComponent } from "./coach-dashboard/coach-dashboard.component";
+import { AdminDashboardComponent } from "./admin-dashboard/admin-dashboard.component";
 
 const appRoutes: Routes = [
   {path: 'sign-in', component: LandingComponent},
   {path: 'contact', component: ContatUsComponent},
   {path: 'about', component: AboutUsComponent},
-  {path: 'coach-dashboard', component: CoachDashboardComponent},
+  {path: 'admin-dashboard', component: AdminDashboardComponent},
   {
     path: 'dashboard', component: SidenavComponent,canActivate:[AuthGuard],
     children: [
