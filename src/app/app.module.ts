@@ -30,6 +30,8 @@ import {AdminSidenavComponent} from './components/admin-sidenav/admin-sidenav.co
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { CoachesTableComponent } from './components/admin-coaches/coaches-table/coaches-table.component';
 import { CoachesRowsComponent } from './components/admin-coaches/coaches-rows/coaches-rows.component';
+import { AtheletesRowsComponent } from './components/admin-atheletes/atheletes-rows/atheletes-rows.component';
+import { AtheletesTableComponent } from './components/admin-atheletes/atheletes-table/atheletes-table.component';
 
 
 @NgModule({
@@ -55,6 +57,8 @@ import { CoachesRowsComponent } from './components/admin-coaches/coaches-rows/co
     AdminDashboardComponent,
     CoachesTableComponent,
     CoachesRowsComponent,
+    AtheletesRowsComponent,
+    AtheletesTableComponent,
   ],
   imports: [
     HttpClientModule,

@@ -14,6 +14,7 @@ import { DevicesComponent } from './components/devices/devices.component';
 import { AuthGuard } from './guards/auth.guard';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { CoachesTableComponent } from './components/admin-coaches/coaches-table/coaches-table.component';
+import { AtheletesTableComponent } from './components/admin-atheletes/atheletes-table/atheletes-table.component';
 
 const appRoutes: Routes = [
   { path: 'sign-in', component: LandingComponent },
@@ -25,6 +26,7 @@ const appRoutes: Routes = [
     children:
     [
       {path: 'coaches', component:CoachesTableComponent},
+      {path: 'athelets', component: AtheletesTableComponent}
     ],
   },
   {
