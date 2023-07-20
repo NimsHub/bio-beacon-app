@@ -16,6 +16,7 @@ import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.compo
 import { CoachesTableComponent } from './components/admin-coaches/coaches-table/coaches-table.component';
 import { AtheletesTableComponent } from './components/admin-atheletes/atheletes-table/atheletes-table.component';
 
+
 const appRoutes: Routes = [
   { path: 'sign-in', component: LandingComponent },
   { path: 'contact', component: ContatUsComponent },
@@ -26,7 +27,7 @@ const appRoutes: Routes = [
     children:
     [
       {path: 'coaches', component:CoachesTableComponent},
-      {path: 'athelets', component: AtheletesTableComponent}
+      {path: 'athelets', component: AtheletesTableComponent},
     ],
   },
   {
