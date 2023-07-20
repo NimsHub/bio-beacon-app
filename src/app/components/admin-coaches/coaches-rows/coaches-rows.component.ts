@@ -1,6 +1,7 @@
 import {Component, Input, OnChanges} from '@angular/core';
 import {CoachDetails} from "../../../models/CoachDetails";
 import {DataService} from "../../../services/data.service";
+import {Coach} from "../../../models/Coach";
 
 @Component({
   selector: 'app-coaches-rows',
@@ -8,13 +9,13 @@ import {DataService} from "../../../services/data.service";
   styleUrls: ['./coaches-rows.component.css']
 })
 export class CoachesRowsComponent implements OnChanges{
-  @Input() coach?: CoachDetails;
+  @Input() coach?: Coach;
   constructor(private dataService:DataService) {
   }
   ngOnChanges(): void {
   }
 
   Onclick() {
-    this.dataService.setCoachDetails(this.coach)
+    this.dataService.setCoach(this.coach)
   }
 }

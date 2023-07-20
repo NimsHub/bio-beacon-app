@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {CoachService} from "../../../services/coach.service";
 import {CoachDetails} from "../../../models/CoachDetails";
+import {Coach} from "../../../models/Coach";
 
 @Component({
   selector: 'app-coaches-table',
@@ -8,13 +9,13 @@ import {CoachDetails} from "../../../models/CoachDetails";
   styleUrls: ['./coaches-table.component.css']
 })
 export class CoachesTableComponent implements OnInit {
-  coaches: CoachDetails[] = [];
+  coaches: Coach[] = [];
 
   constructor(private coachService: CoachService) {
   }
 
   getCoachDetails() {
-    this.coachService.getCoachDetails().subscribe(
+    this.coachService.getCoaches().subscribe(
       {
         next: (value) => this.coaches = value,
         error: (error) => console.log(error),
