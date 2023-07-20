@@ -71,25 +71,27 @@
 
   /*Action Buttons*/
 
-.button-container {
-  display: flex;
-  justify-content: center;
-}
-
-.custom-button {
-  border-radius: 10px;
-}
-
-/* Hover styles */
-.custom-button:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23);
-}
-
-/* Responsive styles */
-@media screen and (max-width: 600px) {
   .button-container {
-    flex-direction: column;
-    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
   }
-}
+  
+  .custom-button {
+    border-radius: 25px;
+  }
+  
+  /* Hover styles */
+  .custom-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23);
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 600px) {
+    .button-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
