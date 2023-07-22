@@ -1,3 +1,4 @@
+# This workflow take action when pushed to the on-premise-release branch and deploys the application to the server
 name: CD to On Premise Server
 
 on:

@@ -6,7 +6,6 @@ services:
     container_name: bio-beacon-app
     networks:
       - network
-
 networks:
     network:
       name: bio-beacon-net
