@@ -14,8 +14,11 @@ export class CoachesRowsComponent implements OnChanges{
   }
   ngOnChanges(): void {
   }
-
   Onclick() {
     this.dataService.setCoach(this.coach)
   }
+
+  // Simulating the backend status
+  //Need to define a service to take the status
+  status: string = 'active'; // Change this value to 'pending' or 'active'
 }
