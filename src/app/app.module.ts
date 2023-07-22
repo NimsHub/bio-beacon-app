@@ -25,7 +25,7 @@ import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
 import { DevicesComponent } from './components/devices/devices.component';
 import {TokenInterceptor} from "./services/token.interceptor";
 import { DeviceRowComponent } from './components/devices/device-row/device-row.component';
-import {NgxQRCodeModule} from "ngx-qrcode2";
+import {NgxQRCodeModule} from "@techiediaries/ngx-qrcode";
 
 @NgModule({
   declarations: [
