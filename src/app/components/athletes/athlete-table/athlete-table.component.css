@@ -1,6 +1,5 @@
 .table {
-  /*max-width: 1000px;*/
-  min-width: 600px;
+  min-width: 300px;
 }
 
 .row {
@@ -15,7 +14,7 @@
   background: #2d132c;
 }
 
-.column {
+.table-column {
   float: left;
   text-align: center;
 }
@@ -30,8 +29,62 @@ p {
 .info {
   margin: 0 0 20px 0;
   background: #f6f6f6;
-  height: 300px;
+  height: 100%;
   box-shadow: 1px 1px 12px #d3d2d2;
   border-radius: 8px;
   padding: 10px;
 }
+
+.info {
+  margin: 0 0 20px 0;
+  background: #f6f6f6;
+  box-shadow: 1px 1px 12px #d3d2d2;
+  border-radius: 8px;
+  padding: 10px;
+  color: black;
+}
+
+.coach-details {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.coach-dp {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.details {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  gap: 20px; /* Add horizontal spacing between columns */
+  justify-content: center; /* Center columns */
+  width: 100%; /* Ensure the columns take the full width */
+}
+
+.column {
+  flex: 1;
+}
+
+.details-column{
+  flex-basis: 45%; /* Adjust the width of the columns */
+}
+
+.details-column p {
+  margin: 10px;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 600px) {
+  .coach-details {
+    flex-wrap: nowrap; /* Prevent wrapping on larger screens */
+  }
+}
+
