@@ -21,6 +21,8 @@ const appRoutes: Routes = [
   { path: 'sign-in', component: LandingComponent },
   { path: 'contact', component: ContatUsComponent },
   { path: 'about', component: AboutUsComponent },
+  //START
+  //These Routings need to be re-arranged with authguard
   {
     path: 'admin-dashboard',
     component: AdminDashboardComponent,
@@ -30,6 +32,7 @@ const appRoutes: Routes = [
       {path: 'athelets', component: AtheletesTableComponent},
     ],
   },
+  //END
   {
     path: 'dashboard',
     component: SidenavComponent,
