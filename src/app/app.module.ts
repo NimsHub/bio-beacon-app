@@ -26,8 +26,6 @@ import { DevicesComponent } from './components/devices/devices.component';
 import { TokenInterceptor } from './services/token.interceptor';
 import { DeviceRowComponent } from './components/devices/device-row/device-row.component';
 import { NgxQRCodeModule } from '@techiediaries/ngx-qrcode';
-import { AdminSidenavComponent } from './components/admin-sidenav/admin-sidenav.component';
-import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { CoachesTableComponent } from './components/admin-coaches/coaches-table/coaches-table.component';
 import { CoachesRowsComponent } from './components/admin-coaches/coaches-rows/coaches-rows.component';
 import { AtheletesRowsComponent } from './components/admin-atheletes/atheletes-rows/atheletes-rows.component';
@@ -52,8 +50,6 @@ import { AtheletesTableComponent } from './components/admin-atheletes/atheletes-
     AthleteRowComponent,
     DevicesComponent,
     DeviceRowComponent,
-    AdminSidenavComponent,
-    AdminDashboardComponent,
     CoachesTableComponent,
     CoachesRowsComponent,
     AtheletesRowsComponent,

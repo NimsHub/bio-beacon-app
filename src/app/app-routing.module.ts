@@ -12,27 +12,13 @@ import { ErrorPageComponent } from './components/error-page/error-page.component
 import { ChartComponent } from './components/chart/chart.component';
 import { DevicesComponent } from './components/devices/devices.component';
 import { AuthGuard } from './guards/auth.guard';
-import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { CoachesTableComponent } from './components/admin-coaches/coaches-table/coaches-table.component';
 import { AtheletesTableComponent } from './components/admin-atheletes/atheletes-table/atheletes-table.component';
-
 
 const appRoutes: Routes = [
   { path: 'sign-in', component: LandingComponent },
   { path: 'contact', component: ContatUsComponent },
   { path: 'about', component: AboutUsComponent },
-  //START
-  //These Routings need to be re-arranged with authguard
-  {
-    path: 'admin-dashboard',
-    component: AdminDashboardComponent,
-    children:
-    [
-      {path: 'coaches', component:CoachesTableComponent},
-      {path: 'athelets', component: AtheletesTableComponent},
-    ],
-  },
-  //END
   {
     path: 'dashboard',
     component: SidenavComponent,
@@ -42,6 +28,8 @@ const appRoutes: Routes = [
       { path: 'sessions', component: SessionTableComponent },
       { path: 'athletes', component: AthleteTableComponent },
       { path: 'devices', component: DevicesComponent },
+      { path: 'coaches', component: CoachesTableComponent },
+      { path: 'athelets', component: AtheletesTableComponent },
     ],
   },
   { path: '', component: HomePageComponent },

@@ -20,5 +20,5 @@ export class CoachesRowsComponent implements OnChanges{
 
   // Simulating the backend status
   //Need to define a service to take the status
-  status: string = 'active'; // Change this value to 'pending' or 'active'
+  status: string = 'pending'; // Change this value to 'pending' or 'active'
 }

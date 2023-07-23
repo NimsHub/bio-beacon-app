@@ -1,20 +1,37 @@
 <button *ngIf="coach" class="column-btn" (click)="Onclick()">
-    <div class="row">
-      <div class="column">
-        <img src="assets/maximus.jpg" alt="display-pic" style="width: 60px;height: 60px;border-radius: 50%">
-        <div style="display: flex;flex-direction: column;align-items: flex-start;margin: 0 20px;justify-content: center">
-        <p>{{coach.firstname}}  {{coach.lastname}}</p>
-        </div>
-      </div>
-      <div class="column">
-        <p>{{coach.email}}</p>
-      </div>
-      <div class="column">
-        <div class="button-container">
-          <button mat-raised-button color="primary" [disabled]="status === 'active'">Activate</button>
-          <button mat-raised-button color="warn">Remove</button>
-        </div>
+  <div class="row">
+    <div class="column">
+      <img
+        src="assets/maximus.jpg"
+        alt="display-pic"
+        style="width: 60px; height: 60px; border-radius: 50%"
+      />
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          margin: 0 20px;
+          justify-content: center;
+        "
+      >
+        <p>{{ coach.firstname }} {{ coach.lastname }}</p>
       </div>
     </div>
-  </button>
-
+    <div class="column">
+      <p>{{ coach.email }}</p>
+    </div>
+    <div class="column">
+      <div class="button-container">
+        <button
+          mat-raised-button
+          color="primary"
+          [disabled]="status === 'active'"
+        >
+          Activate
+        </button>
+        <button mat-raised-button color="warn">Remove</button>
+      </div>
+    </div>
+  </div>
+</button>

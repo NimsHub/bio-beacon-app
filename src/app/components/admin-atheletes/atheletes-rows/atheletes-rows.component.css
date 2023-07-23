@@ -58,11 +58,6 @@
     font-size: 16px;
   }
   
-  .column-btn :hover {
-    background: rgba(241, 241, 241, 0.61);
-    transition: 0.1s;
-    transform: scale(1.02);
-  }
   .column-btn :active {
     background: rgba(255, 255, 255, 0.61);
     transform: scale(1);
