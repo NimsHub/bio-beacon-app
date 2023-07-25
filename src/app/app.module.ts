@@ -10,10 +10,10 @@ import { RegistrationComponent } from './components/registration/registration.co
 import { LandingComponent } from './views/landing/landing.component';
 import { SessionTableComponent } from './components/sessions/session-table/session-table.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
-import { HomePageComponent } from './home-page/home-page.component';
-import { ContatUsComponent } from './contat-us/contat-us.component';
+import { HomePageComponent } from './views/home-page/home-page.component';
+import { ContatUsComponent } from './views/contat-us/contat-us.component';
 import { AppRoutingModule } from './app-routing.module';
-import { AboutUsComponent } from './about-us/about-us.component';
+import { AboutUsComponent } from './views/about-us/about-us.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AthleteTableComponent } from './components/athletes/athlete-table/athlete-table.component';
 import { SessionRowComponent } from './components/sessions/session-row/session-row.component';

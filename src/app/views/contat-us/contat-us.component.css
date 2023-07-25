@@ -10,7 +10,7 @@
     width: 100%;
     min-height: 100vh;
     padding: 2rem;
-    background-image: url('../../assets/contact-us-background.jpg');
+    background-image: url('../../../assets/contact-us-background.jpg');
     overflow: hidden;
     display: flex;
     align-items: center;
