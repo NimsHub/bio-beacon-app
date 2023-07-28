@@ -6,6 +6,9 @@ import {HttpClient} from "@angular/common/http";
 import {CoachDetails} from "../models/CoachDetails";
 import {Coach} from "../models/Coach";
 
+//Only to test mock data
+import { COACHES } from '../models/mock';
+
 @Injectable({
   providedIn: 'root'
 })
@@ -18,5 +21,10 @@ export class CoachService {
 
   getCoaches():Observable<Coach[]>{
     return this.http.get<Coach[]>(environment.baseURL + '/api/v1/coaches/get-all')
+  }
+
+  //added TEMPORARY to get MOCK data
+  setMockCoaches(): Coach[] {
+    return COACHES
   }
 }

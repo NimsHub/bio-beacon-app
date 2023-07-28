@@ -3,4 +3,5 @@ export interface Coach{
   firstname: string;
   lastname: string;
   email: string;
+  isActivated: boolean;
 }
