@@ -7,12 +7,15 @@ import {CoachDetails} from "../models/CoachDetails";
 import {Coach} from "../models/Coach";
 
 //Only to test mock data
-import { COACHES } from '../models/mock';
+import { COACHES } from "../models/mock";
 
 @Injectable({
   providedIn: 'root'
 })
 export class CoachService {
+  //for testing purpose
+  private coaches: Coach[] = [];
+  //delete after testing
 
   constructor(private http:HttpClient) { }
   getCoachDetails():Observable<CoachDetails>{
@@ -24,7 +27,8 @@ export class CoachService {
   }
 
   //added TEMPORARY to get MOCK data
-  setMockCoaches(): Coach[] {
-    return COACHES
+  setMockCoaches(coaches: Coach[]) {
+    this.coaches = coaches;
   }
+  //Delete after testing
 }

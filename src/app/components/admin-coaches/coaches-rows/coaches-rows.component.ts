@@ -1,10 +1,11 @@
 import {Component, Input, OnChanges} from '@angular/core';
-// import {CoachDetails} from "../../../models/CoachDetails";
-// import {DataService} from "../../../services/data.service";
+import {CoachDetails} from "../../../models/CoachDetails";
+import {DataService} from "../../../services/data.service";
 
 //added TEMPORARY to get MOCK data
 import { CoachService } from 'src/app/services/coach.service';
 import {Coach} from "../../../models/Coach";
+import { COACHES} from "../../../models/mock";
 //Delete above after testing
 
 @Component({
@@ -19,6 +20,6 @@ export class CoachesRowsComponent implements OnChanges{
   ngOnChanges(): void {
   }
   Onclick() {
-    this.coachService.setMockCoaches(this.coach)
+    this.coachService.setMockCoaches(COACHES);
   }
 }
