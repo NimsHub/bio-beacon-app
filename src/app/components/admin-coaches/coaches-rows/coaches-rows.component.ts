@@ -5,6 +5,7 @@ import {Component, Input, OnChanges} from '@angular/core';
 //added TEMPORARY to get MOCK data
 import { CoachService } from 'src/app/services/coach.service';
 import {Coach} from "../../../models/Coach";
+//Delete above after testing
 
 @Component({
   selector: 'app-coaches-rows',
