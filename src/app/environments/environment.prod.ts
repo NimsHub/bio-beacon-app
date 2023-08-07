@@ -3,5 +3,5 @@ export const environment = {
   production: false,
   development: true,
   environmentName:"PROD",
-  baseURL:"http://api:5000"
+  baseURL:"http://192.248.50.238:5000"
 };
