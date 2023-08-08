@@ -12,6 +12,7 @@ import {ErrorPageComponent} from "./components/error-page/error-page.component";
 import {ChartComponent} from "./components/chart/chart.component";
 import {DevicesComponent} from "./components/devices/devices.component";
 import {AuthGuard} from "./guards/auth.guard";
+import { EditProfileComponent } from "./components/edit-profile/edit-profile.component";
 
 const appRoutes: Routes = [
   {path: 'sign-in', component: LandingComponent},
@@ -20,6 +21,7 @@ const appRoutes: Routes = [
   {
     path: 'dashboard', component: SidenavComponent,canActivate:[AuthGuard],
     children: [
+      { path: 'edit-profile', component: EditProfileComponent},
       { path: 'sessions/session', component: ChartComponent },
       { path: 'sessions', component: SessionTableComponent },
       { path: 'athletes', component: AthleteTableComponent },

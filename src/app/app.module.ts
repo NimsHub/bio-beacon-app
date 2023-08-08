@@ -26,6 +26,7 @@ import { DevicesComponent } from './components/devices/devices.component';
 import {TokenInterceptor} from "./services/token.interceptor";
 import { DeviceRowComponent } from './components/devices/device-row/device-row.component';
 import {NgxQRCodeModule} from "@techiediaries/ngx-qrcode";
+import { EditProfileComponent } from './components/edit-profile/edit-profile.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import {NgxQRCodeModule} from "@techiediaries/ngx-qrcode";
     AthleteRowComponent,
     DevicesComponent,
     DeviceRowComponent,
+    EditProfileComponent,
   ],
   imports: [
     HttpClientModule,
