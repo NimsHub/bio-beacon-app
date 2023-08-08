@@ -8,7 +8,7 @@ import {DataService} from "../../../services/data.service";
   styleUrls: ['./atheletes-rows.component.css']
 })
 export class AtheletesRowsComponent implements OnChanges{
-  @Input() athlete?: Athlete;
+  @Input() athlete?: Athlete | undefined;
   constructor(private dataService:DataService) {
   }
   ngOnChanges(): void {
@@ -16,5 +16,8 @@ export class AtheletesRowsComponent implements OnChanges{
 
   Onclick() {
     this.dataService.setAthlete(this.athlete)
+  }
+  onRemoveClick() {
+    this.athlete.isActivated = false;
   }
 }

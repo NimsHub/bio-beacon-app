@@ -27,10 +27,11 @@
           mat-raised-button
           color="primary"
           [disabled]="coach.isActivated === true"
+          (click)="onActivateClick()"
         >
           Activate
         </button>
-        <button mat-raised-button color="warn">Remove</button>
+        <button mat-raised-button color="warn" (click)="onRemoveClick()">Remove</button>
       </div>
     </div>
   </div>

@@ -22,4 +22,11 @@ export class CoachesRowsComponent implements OnChanges{
   Onclick() {
     this.coachService.setMockCoaches(COACHES);
   }
+  onActivateClick() {
+    this.coach.isActivated = true;
+  }
+
+  onRemoveClick() {
+    this.coach.isActivated = false;
+  }
 }
