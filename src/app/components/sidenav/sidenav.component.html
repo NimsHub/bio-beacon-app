@@ -10,7 +10,7 @@
           <p style="margin: 0;font-size: 12px">{{userRole==='COACH'? coach?.email : athlete?.email}}</p>
         </div>
         <div style="display: flex;justify-content: center;flex-direction: column">
-          <button matSuffix mat-flat-button>
+          <button matSuffix mat-flat-button routerLink="/dashboard/edit-profile" routerLinkActive="active-route">
             <mat-icon>person_outline</mat-icon>
             Profile
           </button>
