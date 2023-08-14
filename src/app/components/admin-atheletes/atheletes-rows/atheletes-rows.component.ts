@@ -18,6 +18,6 @@ export class AtheletesRowsComponent implements OnChanges{
     this.dataService.setAthlete(this.athlete)
   }
   onRemoveClick() {
-    this.athlete.isActivated = false;
+    // this.athlete.isActivated = false;
   }
 }
