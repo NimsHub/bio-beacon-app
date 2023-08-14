@@ -20,9 +20,7 @@ const appRoutes: Routes = [
   { path: 'contact', component: ContatUsComponent },
   { path: 'about', component: AboutUsComponent },
   {
-    path: 'dashboard',
-    component: SidenavComponent,
-    canActivate: [AuthGuard],
+    path: 'dashboard', component: SidenavComponent, canActivate: [AuthGuard],
     children: [
       { path: 'sessions/session', component: ChartComponent },
       { path: 'sessions', component: SessionTableComponent },
@@ -37,7 +35,11 @@ const appRoutes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(appRoutes)],
-  exports: [RouterModule],
+  imports: [
+    RouterModule.forRoot(appRoutes)
+  ],
+  exports: [
+    RouterModule
+  ],
 })
 export class AppRoutingModule {}
