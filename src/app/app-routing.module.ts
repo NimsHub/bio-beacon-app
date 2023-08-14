@@ -14,6 +14,7 @@ import {DevicesComponent} from "./components/devices/devices.component";
 import {AuthGuard} from "./guards/auth.guard";
 import {CoachesTableComponent} from "./components/admin-coaches/coaches-table/coaches-table.component";
 import {AtheletesTableComponent} from "./components/admin-atheletes/atheletes-table/atheletes-table.component";
+import { EditProfileComponent } from "./components/edit-profile/edit-profile.component";
 
 const appRoutes: Routes = [
   {path: 'sign-in', component: LandingComponent},
@@ -23,6 +24,7 @@ const appRoutes: Routes = [
   {
     path: 'dashboard', component: SidenavComponent,canActivate:[AuthGuard],
     children: [
+      { path: 'edit-profile', component: EditProfileComponent},
       { path: 'sessions/session', component: ChartComponent },
       { path: 'sessions', component: SessionTableComponent },
       { path: 'athletes', component: AthleteTableComponent },

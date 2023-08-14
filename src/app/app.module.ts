@@ -25,12 +25,12 @@ import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
 import { DevicesComponent } from './components/devices/devices.component';
 import {TokenInterceptor} from './services/token.interceptor';
 import { DeviceRowComponent } from './components/devices/device-row/device-row.component';
-
 import {NgxQRCodeModule} from '@techiediaries/ngx-qrcode';
 import {CoachesTableComponent} from './components/admin-coaches/coaches-table/coaches-table.component';
 import {CoachesRowsComponent} from './components/admin-coaches/coaches-rows/coaches-rows.component';
 import {AtheletesRowsComponent} from './components/admin-atheletes/atheletes-rows/atheletes-rows.component';
 import {AtheletesTableComponent} from './components/admin-atheletes/atheletes-table/atheletes-table.component';
+import { EditProfileComponent } from './components/edit-profile/edit-profile.component';
 
 @NgModule({
   declarations: [
@@ -55,6 +55,7 @@ import {AtheletesTableComponent} from './components/admin-atheletes/atheletes-ta
     CoachesRowsComponent,
     AtheletesRowsComponent,
     AtheletesTableComponent,
+    EditProfileComponent,
   ],
   imports: [
     HttpClientModule,

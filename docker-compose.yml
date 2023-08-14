@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  app:
+    image: "ghcr.io/nimshub/bio-beacon-app:latest"
+    container_name: bio-beacon-app
+    networks:
+      - network
+networks:
+    network:
+      name: bio-beacon-net
+      external: true

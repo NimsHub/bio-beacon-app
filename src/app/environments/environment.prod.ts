@@ -3,5 +3,5 @@ export const environment = {
   production: false,
   development: true,
   environmentName:"PROD",
-  baseURL:"http://biobeaconapi-env.eba-xficc75t.us-east-1.elasticbeanstalk.com"
+  baseURL:"http://192.248.50.238:5000"
 };
