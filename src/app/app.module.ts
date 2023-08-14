@@ -19,9 +19,9 @@ import {AthleteTableComponent} from './components/athletes/athlete-table/athlete
 import { SessionRowComponent } from './components/sessions/session-row/session-row.component';
 import { ErrorPageComponent } from './components/error-page/error-page.component';
 import { AthleteRowComponent } from './components/athletes/athlete-row/athlete-row.component';
-import {ChartComponent} from './components/chart/chart.component';
-import {NgChartsModule} from 'ng2-charts';
-import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
+import {ChartComponent} from "./components/chart/chart.component";
+import {NgChartsModule} from "ng2-charts";
+import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
 import { DevicesComponent } from './components/devices/devices.component';
 import { TokenInterceptor } from './services/token.interceptor';
 import {DeviceRowComponent} from './components/devices/device-row/device-row.component';
