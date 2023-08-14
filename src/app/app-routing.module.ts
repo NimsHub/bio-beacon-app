@@ -31,8 +31,8 @@ const appRoutes: Routes = [
       { path: 'athelets', component: AtheletesTableComponent },
     ],
   },
-  { path: '', component: HomePageComponent },
-  { path: '**', component: ErrorPageComponent },
+  {path: '', component: HomePageComponent},
+  {path: '**', component: ErrorPageComponent},
 ];
 
 @NgModule({
@@ -45,5 +45,5 @@ const appRoutes: Routes = [
 })
 export class AppRoutingModule {
 
-  
+
 }
