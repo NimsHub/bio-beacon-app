@@ -72,7 +72,7 @@ import {AtheletesTableComponent} from './components/admin-atheletes/atheletes-ta
   providers: [ { provide:HTTP_INTERCEPTORS,useClass:TokenInterceptor,multi:true},
   
   ],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent]
 })
 export class AppModule {
 }
