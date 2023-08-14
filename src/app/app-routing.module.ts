@@ -1,5 +1,5 @@
 import {NgModule} from "@angular/core";
-import {RouterModule,Routes} from "@angular/router";
+import {RouterModule, Routes} from "@angular/router";
 import {HomePageComponent} from "./views/home-page/home-page.component";
 import {ContatUsComponent} from "./views/contat-us/contat-us.component";
 import {LandingComponent} from "./views/landing/landing.component";
@@ -32,8 +32,8 @@ const appRoutes: Routes = [
     ],
   },
   {path: '', component: HomePageComponent},
-  {path: '**', component: ErrorPageComponent},
-];
+  {path: '**', component: ErrorPageComponent}
+]
 
 @NgModule({
   imports: [
@@ -41,7 +41,7 @@ const appRoutes: Routes = [
   ],
   exports: [
     RouterModule
-  ],
+  ]
 })
 export class AppRoutingModule {
 
