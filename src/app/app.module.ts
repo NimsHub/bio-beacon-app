@@ -23,8 +23,9 @@ import {ChartComponent} from "./components/chart/chart.component";
 import {NgChartsModule} from "ng2-charts";
 import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
 import { DevicesComponent } from './components/devices/devices.component';
-import { TokenInterceptor } from './services/token.interceptor';
-import {DeviceRowComponent} from './components/devices/device-row/device-row.component';
+import {TokenInterceptor} from './services/token.interceptor';
+import { DeviceRowComponent } from './components/devices/device-row/device-row.component';
+
 import {NgxQRCodeModule} from '@techiediaries/ngx-qrcode';
 import {CoachesTableComponent} from './components/admin-coaches/coaches-table/coaches-table.component';
 import {CoachesRowsComponent} from './components/admin-coaches/coaches-rows/coaches-rows.component';
@@ -68,8 +69,8 @@ import {AtheletesTableComponent} from './components/admin-atheletes/atheletes-ta
     NgChartsModule,
     NgxQRCodeModule
   ],
-  providers: [
-    { provide: HTTP_INTERCEPTORS, useClass: TokenInterceptor, multi: true },
+  providers: [ { provide:HTTP_INTERCEPTORS,useClass:TokenInterceptor,multi:true},
+  
   ],
   bootstrap: [AppComponent],
 })
