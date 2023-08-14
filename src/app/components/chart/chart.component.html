@@ -1,22 +1,44 @@
 <div class="info">
-  <button style="margin: 0" matSuffix mat-flat-button ><mat-icon>apps</mat-icon>
-    Dashboard</button>
-<h2>Session Details Placeholder</h2>
+  <button style="margin: 0" matSuffix mat-flat-button>
+    <mat-icon>apps</mat-icon> Dashboard
+  </button>
+  <h2>Session Details</h2>
+  <div class="coach-details">
+    <div class="details">
+      <div class="column details-column">
+        <p><strong>Device ID:</strong> 156895</p>
+        <p><strong>Start Date</strong> 07/07/2023</p>
+        <p><strong>Start Time:</strong> 08:20:10 AM</p>
+      </div>
+      <div class="column details-column">
+        <p><strong>End Date</strong> 07/07/2023</p>
+        <p><strong>End Time:</strong> 08:30:40 AM</p>
+        <p><strong>Duration:</strong> 0h 10m 30s</p>
+      </div>
+    </div>
+  </div>
 </div>
+
 <div id="canvas">
-<canvas  baseChart class="chart"
-        [data]="lineChartData"
-        [options]="lineChartOptions"
-        [type]="lineChartType"
-        ></canvas>
-  <canvas baseChart class="chart"
-          [data]="lineChartData"
-          [options]="lineChartOptions"
-          [type]="lineChartType"
+  <canvas
+    baseChart
+    class="chart"
+    [data]="lineChartData"
+    [options]="lineChartOptions"
+    [type]="lineChartType"
   ></canvas>
-  <canvas baseChart class="chart"
-          [data]="lineChartData"
-          [options]="lineChartOptions"
-          [type]="lineChartType"
+  <canvas
+    baseChart
+    class="chart"
+    [data]="lineChartData"
+    [options]="lineChartOptions"
+    [type]="lineChartType"
+  ></canvas>
+  <canvas
+    baseChart
+    class="chart"
+    [data]="lineChartData"
+    [options]="lineChartOptions"
+    [type]="lineChartType"
   ></canvas>
 </div>
