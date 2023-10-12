@@ -1,22 +1,30 @@
 <div class="info">
-  <button style="margin: 0" matSuffix mat-flat-button ><mat-icon>apps</mat-icon>
-    Dashboard</button>
-<h2>Session Details Placeholder</h2>
+  <button style="margin: 0" matSuffix mat-flat-button>
+    <mat-icon>apps</mat-icon> Dashboard
+  </button>
+  <h2>Session Details</h2>
+  <div class="coach-details">
+    <div class="details">
+      <div class="column details-column">
+        <p><strong>Device ID:</strong> {{session?.deviceId}}</p>
+        <p><strong>Start Date</strong> {{startDate}}</p>
+        <p><strong>Start Time:</strong> {{startTime}}</p>
+      </div>
+      <div class="column details-column">
+        <p><strong>End Date</strong> {{endDate}}</p>
+        <p><strong>End Time:</strong> {{endTime}}</p>
+        <p><strong>Duration:</strong> {{session?.sessionDuration}}</p>
+      </div>
+    </div>
+  </div>
 </div>
-<div id="canvas">
-<canvas  baseChart class="chart"
-        [data]="lineChartData"
-        [options]="lineChartOptions"
-        [type]="lineChartType"
-        ></canvas>
-  <canvas baseChart class="chart"
-          [data]="lineChartData"
-          [options]="lineChartOptions"
-          [type]="lineChartType"
-  ></canvas>
-  <canvas baseChart class="chart"
-          [data]="lineChartData"
-          [options]="lineChartOptions"
-          [type]="lineChartType"
+<app-activity-times session=""></app-activity-times>
+<div id="canvas" >
+  <canvas *ngFor="let data of lineChartDataArray"
+    baseChart
+    class="chart"
+    [data]="data.lineChartData"
+    [options]="data.lineChartOptions"
+    [type]="lineChartType"
   ></canvas>
 </div>

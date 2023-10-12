@@ -12,6 +12,8 @@ import {MatButtonToggleModule} from "@angular/material/button-toggle";
 import {MatSidenavModule} from "@angular/material/sidenav";
 import {MatCheckboxModule} from "@angular/material/checkbox";
 import {MatToolbarModule} from "@angular/material/toolbar";
+import {MatSelectModule} from '@angular/material/select';
+import { MatOptionModule } from '@angular/material/core';
 
 const matModules = [
   MatFormFieldModule,
@@ -27,6 +29,7 @@ const matModules = [
   MatDatepickerModule,
   MatNativeDateModule,
   MatRadioModule,
+  MatSelectModule
 ]
 
 @NgModule({

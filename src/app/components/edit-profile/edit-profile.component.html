@@ -1,0 +1,66 @@
+<div class="info">
+    <button style="margin: 0" matSuffix mat-flat-button>
+      <mat-icon>apps</mat-icon> Dashboard
+    </button>
+    <h2>Edit Profile</h2>
+  </div>
+  
+
+  <div class="edit-profile-container">
+    <form [formGroup]="editForm" class="edit-form">
+      <mat-form-field appearance="outline">
+        <mat-label>First Name</mat-label>
+        <input matInput formControlName="firstName" placeholder="First Name" />
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Last Name</mat-label>
+        <input matInput placeholder="Last Name" />
+      </mat-form-field>
+  
+      <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="Email" />
+      </mat-form-field>
+  
+      <mat-form-field appearance="outline">
+        <mat-label>Password</mat-label>
+        <input matInput formControlName="password" type="password" placeholder="Password" />
+      </mat-form-field>
+  
+      <mat-form-field appearance="outline">
+        <mat-label>Confirm Password</mat-label>
+        <input matInput formControlName="confirmPassword" type="password" placeholder="Confirm Password" />
+        <mat-error *ngIf="confirmPasswordHasError('passwordMismatch')">
+          Passwords do not match.
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Gender</mat-label>
+        <mat-select>
+          <mat-option value="male">Male</mat-option>
+          <mat-option value="female">Female</mat-option>
+        </mat-select>
+      </mat-form-field>
+  
+      <mat-form-field appearance="outline">
+        <mat-label>Date of Birth</mat-label>
+        <input matInput type="date" />
+      </mat-form-field>
+  
+      <mat-form-field appearance="outline">
+        <mat-label>Mobile</mat-label>
+        <input matInput placeholder="Mobile" />
+      </mat-form-field>
+  
+      <mat-form-field appearance="outline">
+        <mat-label>Address</mat-label>
+        <textarea matInput placeholder="Address"></textarea>
+      </mat-form-field>
+  
+      <button mat-raised-button color="primary" (click)="saveProfile()" [disabled]="editForm.invalid || editForm.pending">
+        Save
+      </button>
+    </form>
+  </div>

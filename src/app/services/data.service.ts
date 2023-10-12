@@ -3,6 +3,7 @@ import {Athlete} from "../models/Athlete";
 import {Session} from "../models/Session";
 import {AthleteDetails} from "../models/AthleteDetails";
 import {CoachDetails} from "../models/CoachDetails";
+import {Coach} from "../models/Coach";
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +13,16 @@ export class DataService {
   private _session: Session | undefined;
   private athleteDetails: AthleteDetails | undefined;
   private coachDetails: CoachDetails | undefined;
+  private coach : Coach | undefined;
   constructor( ) {
+  }
+
+  setCoach(coach: Coach | undefined){
+    this.coach = coach;
+  }
+
+  getCoach():Coach | undefined{
+    return this.coach;
   }
   setAthleteDetails(athleteDetails:AthleteDetails){
     this.athleteDetails = athleteDetails;
@@ -35,8 +45,12 @@ export class DataService {
   set session(value: Session | undefined) {
     this._session = value;
   }
-
-
+  setSession(value: Session | undefined) {
+    this._session = value;
+  }
+  getSession() {
+    return this._session
+  }
   setAthlete(athlete: Athlete | undefined) {
     this.athlete = athlete;
   }

@@ -22,7 +22,7 @@ h1 {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
   "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: rgb(255, 255, 255);
-  background-image: url("../../assets/Left.png");
+  background-image: url("../../../assets/Left.png");
   text-align: center;
   position: relative;
   overflow: hidden;

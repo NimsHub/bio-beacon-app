@@ -43,7 +43,9 @@ export class SessionTableComponent implements OnInit {
       })
     }
   }
-
+  public setSession(session:Session){
+    this.dataService.setSession(session)
+  }
   ngOnInit(): void {
     // this.getSessions()
   }
