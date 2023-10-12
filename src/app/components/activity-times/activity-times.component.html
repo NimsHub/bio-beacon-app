@@ -1,0 +1,58 @@
+<div id="container">
+  <table *ngIf="activityTime!=undefined">
+    <tr *ngIf="activityTime?.cycling!='0'">
+      <td class="row-name">Cycling</td>
+      <td class="row-td">
+        <div class="filler">
+          <div class="row-div" [style.width.px]="cyclingFraction"></div>
+        </div>
+      </td>
+      <td>{{activityTime?.cycling}}</td>
+    </tr>
+    <tr *ngIf="activityTime?.pushUp!='0'">
+      <td>Push Up</td>
+      <td class="row-td">
+        <div class="filler">
+          <div class="row-div" [style.width.px]="pushUpFraction"></div>
+        </div>
+      </td>
+      <td>{{activityTime?.pushUp}}</td>
+    </tr>
+    <tr *ngIf="activityTime?.tableTennis!='0'">
+      <td>Table Tennis</td>
+      <td class="row-td">
+        <div class="filler">
+          <div class="row-div" [style.width.px]="tableTennisFraction"></div>
+        </div>
+      </td>
+      <td>{{activityTime?.tableTennis}}</td>
+    </tr>
+    <tr *ngIf="activityTime?.running!='0'">
+      <td>Running</td>
+      <td class="row-td">
+        <div class="filler">
+          <div class="row-div" [style.width.px]=""></div>
+        </div>
+      </td>
+      <td>{{activityTime?.running}}</td>
+    </tr>
+    <tr *ngIf="activityTime?.walking!='0'">
+      <td>Walking</td>
+      <td class="row-td">
+        <div class="filler">
+          <div class="row-div" [style.width.px]="runningFraction"></div>
+        </div>
+      </td>
+      <td>{{activityTime?.walking}}</td>
+    </tr>
+    <tr *ngIf="activityTime?.squat!='0'">
+      <td>Squat</td>
+      <td class="row-td">
+        <div class="filler">
+          <div class="row-div" [style.width.px]="squatFraction"></div>
+        </div>
+      </td>
+      <td>{{activityTime?.squat}}</td>
+    </tr>
+  </table>
+</div>
