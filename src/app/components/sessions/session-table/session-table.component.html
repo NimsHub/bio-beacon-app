@@ -10,7 +10,7 @@
         <p><strong>Occupation:</strong> Engineer</p>
         <p><strong>Gender:</strong> Male</p>
         <p><strong>Date of Birth:</strong> 22/03/1997</p>
-        
+
       </div>
       <div class="column details-column">
         <p><strong>Height:</strong> 165cm</p>
@@ -48,6 +48,6 @@
     </div>
 
   </div>
-  <app-session-row *ngFor="let session of sessions" [sessionItem]="session" routerLink="/dashboard/sessions/session"
+  <app-session-row  *ngFor="let session of sessions" [sessionItem]="session" (click)="setSession(session)" routerLink="/dashboard/sessions/session"
                  style="max-width: 1000px;height: 100%"></app-session-row>
 </div>

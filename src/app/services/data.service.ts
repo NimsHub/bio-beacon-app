@@ -45,8 +45,12 @@ export class DataService {
   set session(value: Session | undefined) {
     this._session = value;
   }
-
-
+  setSession(value: Session | undefined) {
+    this._session = value;
+  }
+  getSession() {
+    return this._session
+  }
   setAthlete(athlete: Athlete | undefined) {
     this.athlete = athlete;
   }

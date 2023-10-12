@@ -31,6 +31,7 @@ import {CoachesRowsComponent} from './components/admin-coaches/coaches-rows/coac
 import {AtheletesRowsComponent} from './components/admin-atheletes/atheletes-rows/atheletes-rows.component';
 import {AtheletesTableComponent} from './components/admin-atheletes/atheletes-table/atheletes-table.component';
 import { EditProfileComponent } from './components/edit-profile/edit-profile.component';
+import { ActivityTimesComponent } from './components/activity-times/activity-times.component';
 
 @NgModule({
   declarations: [
@@ -56,6 +57,7 @@ import { EditProfileComponent } from './components/edit-profile/edit-profile.com
     AtheletesRowsComponent,
     AtheletesTableComponent,
     EditProfileComponent,
+    ActivityTimesComponent,
   ],
   imports: [
     HttpClientModule,
