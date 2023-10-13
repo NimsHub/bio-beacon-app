@@ -58,4 +58,20 @@ export class DataService {
   getAthlete() {
     return this.athlete
   }
+
+  calculateAcwr(value: number,chronicLoad:number): number {
+    // Ensure the value is within the original range
+    value = Math.max(21, Math.min(400, value));
+
+    // Map the value to the target range
+    const fromRange = 400 - 21;
+    const toRange = 0.8 - 0.3;
+
+    // Calculate the mapped value
+    const scaledValue = (value - 21) / fromRange;
+    const result = scaledValue * toRange + 0.3;
+
+    return result;
+  }
+
 }
