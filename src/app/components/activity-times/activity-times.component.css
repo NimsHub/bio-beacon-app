@@ -23,6 +23,8 @@
   border-radius: 5px
 }
 #container{
+  display: flex;
+  flex-direction: column;
   margin: 0 0 20px 0;
   background: #f6f6f6;
   box-shadow: 1px 1px 12px #d3d2d2;

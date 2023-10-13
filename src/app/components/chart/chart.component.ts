@@ -13,7 +13,6 @@ interface chartData {
   lineChartOptions: ChartConfiguration['options']
 }
 
-
 @Component({
   selector: 'app-chart',
   templateUrl: './chart.component.html',
@@ -43,10 +42,10 @@ export class ChartComponent implements OnInit {
           HeartRate: value.heartRate.split(",").map(function (value) {
             return parseInt(value, 10);
           }),
-          respirationRate: value.respirationRate.split(",").map(function (value) {
+          RespirationRate: value.respirationRate.split(",").map(function (value) {
             return parseInt(value, 10);
           }),
-          bloodOxygen: value.bloodOxygen.split(",").map(function (value) {
+          BloodOxygen: value.bloodOxygen.split(",").map(function (value) {
             return parseInt(value, 10);
           })
         }

@@ -1,4 +1,6 @@
-<div id="container">
+<div id="container" *ngIf="activityTime!=undefined">
+  <div>
+
   <table *ngIf="activityTime!=undefined">
     <tr *ngIf="activityTime?.cycling!='0'">
       <td class="row-name">Cycling</td>
@@ -7,7 +9,8 @@
           <div class="row-div" [style.width.px]="cyclingFraction"></div>
         </div>
       </td>
-      <td>{{activityTime?.cycling}}</td>
+<!--      <td>{{activityTime?.cycling}} s  </td>-->
+      <td class="row-name"><strong> - {{cyclingCalories}} Cals. burned</strong></td>
     </tr>
     <tr *ngIf="activityTime?.pushUp!='0'">
       <td>Push Up</td>
@@ -16,7 +19,8 @@
           <div class="row-div" [style.width.px]="pushUpFraction"></div>
         </div>
       </td>
-      <td>{{activityTime?.pushUp}}</td>
+<!--      <td>{{activityTime?.pushUp}} s  </td>-->
+      <td class="row-name"><strong> - {{pushUpCalories}} Cals. burned</strong></td>
     </tr>
     <tr *ngIf="activityTime?.tableTennis!='0'">
       <td>Table Tennis</td>
@@ -25,25 +29,28 @@
           <div class="row-div" [style.width.px]="tableTennisFraction"></div>
         </div>
       </td>
-      <td>{{activityTime?.tableTennis}}</td>
+<!--      <td>{{activityTime?.tableTennis}}   seconds</td>-->
+      <td class="row-name"><strong> - {{tableTennisCalories}}. Calories burned</strong></td>
     </tr>
     <tr *ngIf="activityTime?.running!='0'">
       <td>Running</td>
       <td class="row-td">
         <div class="filler">
-          <div class="row-div" [style.width.px]=""></div>
+          <div class="row-div" [style.width.px]="runningFraction"></div>
         </div>
       </td>
-      <td>{{activityTime?.running}}</td>
+<!--      <td>{{activityTime?.running}} s  </td>-->
+      <td class="row-name"><strong> - {{runningCalories}} Cals. burned</strong></td>
     </tr>
     <tr *ngIf="activityTime?.walking!='0'">
       <td>Walking</td>
       <td class="row-td">
         <div class="filler">
-          <div class="row-div" [style.width.px]="runningFraction"></div>
+          <div class="row-div" [style.width.px]="walkingFraction"></div>
         </div>
       </td>
-      <td>{{activityTime?.walking}}</td>
+<!--      <td>{{activityTime?.walking}} s  </td>-->
+      <td class="row-name"><strong> - {{walkingCalories}} Cals. burned</strong></td>
     </tr>
     <tr *ngIf="activityTime?.squat!='0'">
       <td>Squat</td>
@@ -52,7 +59,12 @@
           <div class="row-div" [style.width.px]="squatFraction"></div>
         </div>
       </td>
-      <td>{{activityTime?.squat}}</td>
+<!--      <td>{{activityTime?.squat}} s  </td>-->
+      <td class="row-name"><strong> - {{squatCalories}} Cals. burned</strong></td>
     </tr>
   </table>
+  </div>
+  <div>
+    <strong>Estimated ACWR : {{ACWR}}</strong>
+  </div>
 </div>

@@ -5,4 +5,6 @@ export interface ActivityTime {
   squat:string;
   tableTennis:string;
   walking:string;
+  acuteWorkload:number;
+  chronicWorkload:number;
 }
